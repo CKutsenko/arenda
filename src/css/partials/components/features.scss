@@ -4,21 +4,15 @@
   padding-bottom: 60px;
   position: relative;
 
-  // &:before {
-  //   content: '';
-  //   background-image: url(../img/Line.png);
-  //   width: 1px;
-  //   height: 370px;
-  //   position: absolute;
-  //   background-size: contain;
-  //   left: 16%;
-  //   top: 110px;
-  // }
 
   &__block-title {
     font-size: 46px;
     letter-spacing: 0;
     font-weight: 500;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+      font-family: $bold;
+    }
   }
 
   &__title {
@@ -40,16 +34,16 @@
    margin-left: 18%;
    max-width: 28%;
    position: relative;
-    @include mq($from:xs, $until:lg){
-      margin-left: 20%;
-      max-width: 80%;
+    @include mq($from:xs, $until:lg) {
+      margin-left: 50px;
+      max-width: 100%;
     }
     &:before {
       position: absolute;
       left: -62%;
       top: 7px;
     @include mq($from:md, $until:lg){
-      left: -25%;
+      left: 0;
       }
     }
     &:after {
@@ -62,7 +56,7 @@
     top: 7px;
     left: -31%;
     @include mq($from:md, $until:lg){
-      left: -12%;
+      left: 0;
       }
     }
   }
@@ -99,6 +93,9 @@
     font-weight: 500;
     font-family: $bold;
     line-height: 46px;
+    @include mq($from:xs, $until:lg) {
+      font-size: 26px;
+    }
     p{
       margin: 0;
       padding: 0;
@@ -111,6 +108,10 @@
     font-family: $bold;
     letter-spacing: 0;
     margin-bottom: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+      font-family: $bold;
+    }
   }
 
   &__text {
@@ -124,6 +125,10 @@
    margin-left: 72%;
    max-width: 28%;
    position: relative;
+    @include mq($from:xs, $until:lg) {
+      margin: 0;
+      max-width: 100%;
+    }
     &:before {
       position: absolute;
       left: -62%;
