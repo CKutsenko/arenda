@@ -653,6 +653,35 @@ img {
   .promo__btn:hover {
     background-color: rgba(255, 255, 255, 0.8); }
 
+.header--rent {
+  background-image: url(../img/Promo-block-arenda.jpg);
+  min-height: 650px; }
+
+.promo--rent .promo__wrapper {
+  -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+  max-width: 70%; }
+
+.header--resellers {
+  background-image: url(../img/Promo-block-twohands.jpg);
+  min-height: 650px; }
+
+.header--commerce {
+  background-image: url(../img/Promo-block-commerce.jpg);
+  min-height: 650px; }
+
+.promo--commerce .promo__wrapper {
+  -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+  max-width: 80%; }
+
+.header--support {
+  background-image: url(../img/Promo-block-support.jpg);
+  min-height: 650px; }
+
+.promo--support h1 {
+  text-transform: uppercase; }
+
 .footer {
   background-color: #000000;
   color: #ffffff;
@@ -977,6 +1006,74 @@ img {
   .advantages__subtitle {
     font-size: 20px;
     font-family: "PTSansBold", sans-serif; }
+
+.instruction {
+  padding: 60px 0 100px; }
+  .instruction__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif; }
+  .instruction__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 35px;
+    font-family: "PTSansBold", sans-serif; }
+  .instruction p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
+
+.resale {
+  padding: 60px 0 100px; }
+  .resale__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    max-width: 86%; }
+  .resale__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 25px;
+    font-family: "PTSansBold", sans-serif; }
+  .resale p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
+
+.resale__wrapper--second {
+  padding-top: 60px; }
+
+.business {
+  padding: 60px 0 100px; }
+  .business__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    max-width: 86%; }
+  .business__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 25px;
+    font-family: "PTSansBold", sans-serif; }
+  .business p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
   @media (min-width: 540px){
   .container{
     max-width: 480px; } }
@@ -1058,7 +1155,15 @@ img {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
   .promo__btn{
-    display: none; } }
+    display: none; }
+  .promo--rent .promo__wrapper{
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .promo--commerce .promo__wrapper{
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; } }
   @media (min-width: 33.75em) and (max-width: 47.99em){
   .header__logo{
     left: 35%; } }
@@ -1118,7 +1223,36 @@ img {
     -ms-flex-direction: column;
     flex-direction: column; }
   .advantages__inner{
-    max-width: 100%; } }
+    max-width: 100%; }
+  .instruction{
+    padding: 30px 0; }
+  .instruction__title{
+    font-size: 26px; }
+  .instruction__subtitle{
+    font-size: 16px;
+    padding-top: 20px; }
+  .instruction p{
+    font-size: 14px; }
+  .resale{
+    padding: 30px 0; }
+  .resale__title{
+    font-size: 26px;
+    max-width: 100%; }
+  .resale__subtitle{
+    font-size: 16px;
+    padding-top: 20px; }
+  .resale p{
+    font-size: 14px; }
+  .business{
+    padding: 30px 0; }
+  .business__title{
+    font-size: 26px;
+    max-width: 100%; }
+  .business__subtitle{
+    font-size: 16px;
+    padding-top: 20px; }
+  .business p{
+    font-size: 14px; } }
   @media (max-width: 63.99em){
   .features-first__step{
     margin-left: 50px;
