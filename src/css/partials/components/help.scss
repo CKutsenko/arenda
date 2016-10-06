@@ -5,12 +5,17 @@
   color: $white;
   @include mq($from:xs, $until:md){
     min-height: 320px;
+    background-image: url(../img/girl_320.jpg);
+    max-height: 400px;
   }
 
   &__title {
     font-size: 46px;
     font-family: $bold;
     letter-spacing: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+    }
   }
 
   &__wrapper {
@@ -29,6 +34,11 @@
     max-width: 100%;
     }
   }
+      &__btn-inner {
+      @include mq($from:xs, $until:md) {
+        padding-top: 15px;
+      }
+    }
 
   &__btn {
     background-color: transparent;
@@ -37,6 +47,11 @@
     color: $white;
     padding: 15px 35px;
     text-transform: uppercase;
+    @include mq($from:xs, $until:md) {
+      font-size: 14px;
+      padding: 7px 20px;
+      border: 1px solid $white;
+    }
 
     &:hover {
       background-color: rgba(0,0,0,0.1);

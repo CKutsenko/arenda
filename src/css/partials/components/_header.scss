@@ -5,7 +5,10 @@
   background-position: 50% 100%;
   background-size: cover;
   color: $white;
-
+  @include mq($from:xs, $until:sm){
+    min-height: 500px;
+    background-image: url(../img/Promo-block-index-320.jpg);
+  }
 
   .row {
     justify-content: space-between;
@@ -16,40 +19,69 @@
     display: -o-flex;
     display: flex;
     padding-top: 50px;
+    @include mq($from:xs, $until:xl){
+      padding-top: 25px;
+    }
   }
 
- &__logo{
-  max-width: 25%;
-  flex: 0 0 25%;
-
-  &__img{
-    display: block;
-    width: 180px;
-    height: auto;
+  &__logo{
+    max-width: 25%;
+    flex: 0 0 25%;
+    @include mq($from:xs, $until:xl){
+      order: 2;
+      max-width: 55%;
+      position: absolute;
+      left: 25%;
+    }
+    @include mq($from:sm, $until:md){
+      left: 35%;
+    }
+    @include mq($from:md, $until:xl){
+      left: 42%;
+    }
+    &__img{
+      display: block;
+      width: 180px;
+      height: auto;
+    }
   }
- }
- &__phone-inner {
-  flex: 0 0 25%;
-  max-width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  &__phone-inner {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include mq($from:xs, $until:xl){
+      order: 3;
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
 
-  a {
-    color: $white;
+    a {
+      color: $white;
+    }
   }
- }
 
   &__phone {
     font-size: 16px;
+    @include mq($from:xs, $until:xl){
+      font-size: 0;
+      height: 20px;
+      width: 20px;
+      background-image: url(../img/phone.svg);
+      transform: rotate(270deg);
+    }
   }
 
   &__order {
     font-size: 14px;
     padding-top: 8px;
-      &:hover {
-        border-bottom: 1px solid $white;
-      }
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+    @include mq($from:xs, $until:xl){
+      display: none;
+    }
   }
 }
 
@@ -58,18 +90,22 @@
   flex: 0 0 50%;
   max-width: 50%;
   align-items: center;
+  @include mq($from:xs, $until:xl){
+    max-width: 100%;
+    position: relative;
+    z-index: 100;
+  }
   &__hamburger{
     display: none;
     text-align: center;
-    @include mq($from:xs, $until:md){
+    @include mq($from:xs, $until:xl){
       display: block;
+      width: 10%;
+      z-index: 1000;
+      position: absolute;
     }
   }
-  &__list-wrapper{
-    @include mq($from:xs, $until:md){
-      display: none;
-    }
-  }
+
   &__list{
     margin: 0;
     padding: 0;
@@ -78,15 +114,59 @@
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    @include mq($from:xs, $until:md){
+    flex-direction: row;
+    @include mq($from:xs, $until:xl){
+      display: none;
       padding: 0;
       text-align: center;
       margin-top: 0;
+      flex-direction: column;
+      // max-width: 100%;
+      position: absolute;
+      background-color: #1c202c;
+      top: 0;
+      z-index: 10;
+      padding-top: 40px;
+      text-align: left;
+      padding-bottom: 30px;
+      width: 285px;
+        .nav__item {
+          padding-top: 12px;
+        }
+    }
+  }
+
+  &__min-call,
+  &__min-order {
+    display: none;
+    @include mq($from:xs, $until:xl){
+      display: block;
+      padding-top: 20px;
+        a {
+          color: $white;
+      }
+    }
+  }
+
+  &__min-call {
+    a {
+      font-size: 16px;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &__min-order {
+    a {
+      border-bottom: 1px solid $white;
     }
   }
 
   &__item{
     text-transform: uppercase;
+
+    @include mq($from:xs, $until:xl){
+      width: 100%;
+    }
     a {
       color: $white;
       font-size: 12px;
@@ -102,26 +182,16 @@
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
-  span{
-    display: block;
-    width: 30px;
-    margin: 0 auto;
-    height: 3px;
-    background-color: $blue;
+  position: relative;
 
-    &:after, &:before{
-      content: "";
-      display: block;
-      width: 30px;
-      height: 3px;
-      background-color: $blue;
-    }
-    &:before{
-      transform: translateY(-250%);
-    }
-    &:after{
-      transform: translateY(150%);
-    }
+  &:after {
+    content: '';
+    background-image: url(../img/bars.svg);
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -132,6 +202,10 @@
     flex-direction: column;
     flex: 0 0 55%;
     max-width: 55%;
+    @include mq($from:xs, $until:xl){
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
   }
 
   &__title {
@@ -139,6 +213,10 @@
     margin-top: 70px;
     letter-spacing: 0;
     font-family: $bold;
+    @include mq($from:xs, $until:sm){
+      margin-top: 65px;
+      font-size: 26px;
+    }
   }
 
   &__btn {
@@ -151,10 +229,15 @@
     letter-spacing: 0;
     border-radius: 5px;
     color: $black;
+    @include mq($from:xs, $until:xl){
+      display: none;
+    }
+
 
     &:hover {
       background-color: rgba(255,255,255, 0.8);
     }
   }
 }
+
 

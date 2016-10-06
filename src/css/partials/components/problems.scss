@@ -20,7 +20,7 @@
     font-size: 46px;
     font-family: $bold;
     @include mq($from:xs, $until:md){
-      font-size: 36px;
+      font-size: 26px;
     }
   }
 
