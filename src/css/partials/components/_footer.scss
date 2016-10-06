@@ -1,48 +1,110 @@
 .footer{
-  padding: 0 50px;
-  background-image: url(../img/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: cover;
-  outline: 1px solid $white;
-  outline-offset: -5px;  
-  @include mq($from:xs, $until:lg){
-    padding: 0 20px;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  padding-bottom: 50px;
+
+  &__contacts-block {
+    background-color: #1e2432;
   }
 
-  &__inner{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    @include mq($from:xs, $until:lg){
-      flex-wrap: wrap;
-      justify-content: center;
+  &__nav {
+    .row {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      padding-top: 50px;
     }
   }
-  &__wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    @include mq($from:xs, $until:sm){
-      justify-content: center;
+    &__logo{
+      max-width: 25%;
+      flex: 0 0 25%;
+
+      img{
+        display: block;
+        width: 180px;
+        height: auto;
+        align-items: flex-start;
+      }
     }
-  }
-  &__buttons{
-    text-align: right;
-    max-width: 250px;
-    margin-top: 25px;
-    .btn{
-      margin: 0 20px 10px;
+    &__phone-inner {
+      flex: 0 0 25%;
+      max-width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &__phone {
+      font-size: 16px;
+    }
+
+    &__order {
+      font-size: 14px;
+      padding-top: 29px;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+}
+
+
+.contacts {
+  padding: 60px 0 90px;
+  letter-spacing: 0;
+
+  &__title {
+    font-size: 46px;
+    font-family: $bold;
+    margin-top: 0;
+    padding-top: 0;
+
+    p {
+      margin: 0;
+      padding: 0;
     }
   }
 
-  &__copyright{
-    padding: 30px 0 20px;
-    text-align: right;
+  &__input {
+    background-color: transparent;
+    outline-width: thin;
+    border: none;
+    border-bottom: 2px solid $white;
+    padding: 10px 40px 10px 55px;
+  }
+
+  &__button {
+    background-color: $white;
+    color: $black;
+    outline: none;
+    border: none;
+    padding: 10px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .6s;
+
+    &:hover {
+      background-color: rgba(255,255,255, 0.8);
+    }
   }
 }
 
 
-
-
-
+.nav {
+  &__copyright {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-top: 32px;
+  }
+}
