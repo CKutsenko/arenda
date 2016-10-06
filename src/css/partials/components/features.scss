@@ -1,0 +1,183 @@
+
+
+.features-first {
+  padding-bottom: 60px;
+  position: relative;
+
+  // &:before {
+  //   content: '';
+  //   background-image: url(../img/Line.png);
+  //   width: 1px;
+  //   height: 370px;
+  //   position: absolute;
+  //   background-size: contain;
+  //   left: 16%;
+  //   top: 110px;
+  // }
+
+  &__block-title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: $bold;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-top: 7px;
+  }
+
+  &__step {
+   margin-left: 18%;
+   max-width: 28%;
+   position: relative;
+    @include mq($from:xs, $until:lg){
+      margin-left: 20%;
+      max-width: 80%;
+    }
+    &:before {
+      position: absolute;
+      left: -62%;
+      top: 7px;
+    @include mq($from:md, $until:lg){
+      left: -25%;
+      }
+    }
+    &:after {
+    content: '';
+    position: absolute;
+    background-color: $black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 7px;
+    left: -31%;
+    @include mq($from:md, $until:lg){
+      left: -12%;
+      }
+    }
+  }
+   &__step:nth-of-type(1) {
+    &:before {
+      content: 'Шаг 1';
+    }
+  }
+   &__step:nth-of-type(2) {
+    &:before {
+      content: 'Шаг 2';
+    }
+  }
+   &__step:nth-of-type(3) {
+    &:before {
+      content: 'Шаг 3';
+    }
+  }
+   &__step:nth-of-type(4) {
+    &:before {
+      content: 'Шаг 4';
+    }
+  }
+}
+
+.features-second{
+  background-color: #99c7ff;
+  padding: 20px 0 60px;
+
+
+  &__block-title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-family: $bold;
+    line-height: 46px;
+    p{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: $bold;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-top: 7px;
+  }
+
+  &__step {
+   margin-left: 72%;
+   max-width: 28%;
+   position: relative;
+    &:before {
+      position: absolute;
+      left: -62%;
+      top: 7px;
+    }
+    &:after {
+    content: '';
+    position: absolute;
+    background-color: $black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 7px;
+    left: -31%;
+    }
+  }
+   &__step:nth-of-type(1) {
+    &:before {
+      content: 'Шаг 5';
+    }
+  }
+   &__step:nth-of-type(2) {
+    &:before {
+      content: 'Шаг 6';
+    }
+  }
+   &__step:nth-of-type(3) {
+    &:before {
+      content: 'Шаг 7';
+    }
+  }
+   &__step:nth-of-type(4) {
+    &:before {
+      content: 'Шаг 8';
+    }
+  }
+   &__step:nth-of-type(5) {
+    &:before {
+      content: 'Шаг 9';
+    }
+  }
+   &__step:nth-of-type(6) {
+    &:before {
+      content: 'Шаг 10';
+    }
+  }
+   &__step:nth-of-type(7) {
+    &:before {
+      content: 'Шаг 11';
+    }
+  }
+   &__step:nth-of-type(8) {
+    &:before {
+      content: 'Шаг 12';
+    }
+  }
+}
