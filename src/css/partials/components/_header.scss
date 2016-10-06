@@ -240,4 +240,52 @@
   }
 }
 
+.header--rent {
+  background-image: url(../img/Promo-block-arenda.jpg);
+  min-height: 650px;
+}
+
+.promo--rent {
+  .promo__wrapper {
+    flex: 0 0 70%;
+    max-width: 70%;
+    @include mq($from:xs, $until:xl){
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.header--resellers {
+  background-image: url(../img/Promo-block-twohands.jpg);
+  min-height: 650px;
+}
+
+.header--commerce {
+  background-image: url(../img/Promo-block-commerce.jpg);
+  min-height: 650px;
+}
+
+.promo--commerce {
+  .promo__wrapper {
+    flex: 0 0 80%;
+    max-width: 80%;
+    @include mq($from:xs, $until:xl){
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.header--support {
+  background-image: url(../img/Promo-block-support.jpg);
+  min-height: 650px;
+}
+
+.promo--support {
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
 
