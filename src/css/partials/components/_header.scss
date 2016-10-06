@@ -1,69 +1,63 @@
 .header{
-  padding: 0 50px;
-  background-image: url(../img/header-bg.jpg);
+  min-height: 800px;
+  background-image: url(../img/Promo-block-index.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: cover;
-  outline: 1px solid $white;
-  outline-offset: -5px;
-  @include mq($from:xs, $until:lg){
-    padding: 0 20px;
-  }
+  color: $white;
 
-  &__inner{
-    margin: 0 10px;
-    display: flex;
-    flex-wrap: nowrap;
+
+  .row {
     justify-content: space-between;
-    @include mq($from:xs, $until:lg){
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  &__wrapper{
+    flex-wrap: nowrap;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    @include mq($from:xs, $until:sm){
-      justify-content: center;
-    }
+    padding-top: 50px;
   }
-  &__buttons{
-    text-align: right;
-    max-width: 250px;
-    margin-top: 25px;
-    .btn{
-      margin: 0 20px 10px;
-    }
-  }
-}
 
-.logo{
-  margin-top: 20px;
-  text-align: center;
+ &__logo{
+  max-width: 25%;
+  flex: 0 0 25%;
+
   &__img{
     display: block;
     width: 180px;
-    height: auto;   
+    height: auto;
   }
-  &__title{
-    margin: 10px 0 0;
-    font-family: $font-family-acrom;
-    font-size: $font-size-logo;
-    text-transform: uppercase;
-    font-weight: $bold;
-    letter-spacing: $letter-spacing-logo;
+ }
+ &__phone-inner {
+  flex: 0 0 25%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    color: $white;
   }
-  &__description{
-    margin: 10px 0 0;
-    font-size: $font-size-slogan;
-    text-transform: uppercase;
-    font-weight: $regular;
+ }
+
+  &__phone {
+    font-size: 16px;
+  }
+
+  &__order {
+    font-size: 14px;
+    padding-top: 8px;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
   }
 }
 
+
 .nav{
-  flex: 0 0 100%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: center;
   &__hamburger{
     display: none;
     text-align: center;
@@ -77,9 +71,8 @@
     }
   }
   &__list{
-    margin: 20px 0;
-    padding-left: 20px;
-    padding-right: 10px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -91,20 +84,17 @@
       margin-top: 0;
     }
   }
+
   &__item{
-    @include mq($from:xs, $until:md){
-      flex: 0 0 100%;
-      padding: 5px 0;
-    }    
-  }
-  &__slash{
-    @include mq($from:xs, $until:md){
-      display: none;
-    }    
-  }
-  &__link{
-    color: $text-color;
-    font-weight: $semibold;
+    text-transform: uppercase;
+    a {
+      color: $white;
+      font-size: 12px;
+
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
   }
 }
 
@@ -128,84 +118,43 @@
     }
     &:before{
       transform: translateY(-250%);
-    }    
+    }
     &:after{
       transform: translateY(150%);
-    }    
+    }
   }
 }
 
-.city{
-  margin-top: 10px;
-  margin-right: 10px;
-  text-align: left;
-  // @include mq($from:md, $until:lg){
-  //   margin-right: -50px;
-  // }
-  // @include mq($from:xs, $until:sm){
-  //   text-align: center;
-  //   margin-right: 0;
-  // }
-  &__name-wrapper{
-    position: relative;
+.promo {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 55%;
+    max-width: 55%;
   }
-  &__name{
-    margin-bottom: 15px;
-    &:after{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 10px;
-      @include sprite($s-icon-down);     
+
+  &__title {
+    font-size: 46px;
+    margin-top: 70px;
+    letter-spacing: 0;
+    font-family: $bold;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $white;
+    max-width: 70%;
+    padding: 15px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 5px;
+    color: $black;
+
+    &:hover {
+      background-color: rgba(255,255,255, 0.8);
     }
-    &:hover, &:focus{
-      cursor: pointer;
-    }
-  }
-  &__dropdown{
-    display: none;
-    text-align: left;
-    position: absolute;
-    z-index: 3;
-    bottom: -10px;
-    right: 0;
-    padding-left: 0;
-    margin: 0;
-    transform: translateY(100%);    
-    list-style-type: none;
-    border: 1px solid $black;
-    background-color: $body-bg;
-  }
-  &__item{
-    cursor: pointer;
-    padding: 5px 15px;
-    @include transition();
-    &:hover, &:focus{
-      background-color: $blue-darker;
-      color: $white;
-    }
-  }
-  &__tel{
-    display: block;
-    font-size: $font-size-tel;
-    color: $text-color;
-    font-weight: $semibold;
-    margin-bottom: 10px;
-    position: relative;
-    &:before{
-      content: "";
-      display: inline-block;
-      vertical-align: bottom;
-      @include sprite($s-icon-phone); 
-      position: absolute;  
-      bottom: 0;
-      transform: translateX(-120%);  
-    }    
-  }
-  &__tel-wrapper{
-    margin-bottom: 10px;
-  }
-  &__email{
-    color: $text-color;
   }
 }
+

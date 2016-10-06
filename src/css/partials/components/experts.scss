@@ -1,0 +1,71 @@
+.experts {
+  background-image: url(../img/house_right.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 60px 0 130px;
+  background-size: contain;
+  @include mq($from:xs, $until:md){
+    padding: 30px 30;
+    background: none;
+  }
+
+  &__wrapper {
+    max-width: 55%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+
+    &__block-title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: $bold;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 35px;
+    font-family: $bold;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  &__block:nth-of-type(1) {
+    width: 78%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+  &__block:nth-of-type(2) {
+    width: 62%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+  &__block:nth-of-type(3) .experts__text{
+    width: 62%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+  &__block:nth-of-type(4) .experts__text{
+    width: 78%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+  &__block:nth-of-type(5) {
+    width: 85%;
+  @include mq($from:xs, $until:md){
+    max-width: 100%;
+    }
+  }
+}

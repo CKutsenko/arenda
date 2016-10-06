@@ -1,8 +1,8 @@
 //------------------------------------------------------------------------------
 //  Basic styles - global scaffolding
 //------------------------------------------------------------------------------
-@include font-face("Proxima Nova", ProximaNovaRegular, proximanovaregular-webfont);
-@include font-face(Acrom, Acrom, acrom900-webfont);
+// @include font-face("Proxima Nova", ProximaNovaRegular, proximanovaregular-webfont);
+// @include font-face(Acrom, Acrom, acrom900-webfont);
 
 *,
 *:before,
@@ -19,19 +19,18 @@ body {
   margin: 0;
   background-color: $body-bg;
   color: $text-color;
-  font-family: $font-family;
+  font-family: 'PTSansRegular', sans-serif;
   font-size: $font-size;
   line-height: $line-height;
+  letter-spacing: 0.05em;
 }
 
 a {
-  color: $link-color;
   text-decoration: none;
   @include transition();
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
     // text-decoration: underline;
   }
 }
@@ -48,6 +47,28 @@ img {
 .boldest{
   font-weight: 700;
 }
+
+@font-face {
+    font-family: "PTSansRegular";
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "PTSansBold"; */
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/PTSansBold/PTSansBold.eot");
+    src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansBold/PTSansBold.woff") format("woff"),
+    url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 
 

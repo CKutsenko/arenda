@@ -1,0 +1,37 @@
+.problems {
+  background-color: #1e2432;
+  color: $white;
+  padding: 100px 0;
+  @include mq($from:xs, $until:md){
+    padding: 30px 0;
+  }
+
+
+  &__wrapper {
+    max-width: 60%;
+    @include mq($from:xs, $until:md){
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: $bold;
+    @include mq($from:xs, $until:md){
+      font-size: 36px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+}

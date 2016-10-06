@@ -20,7 +20,7 @@ $screen-xs:                   0; // Extra small screen / phone
 $screen-sm:                   480px; // Small screen / phone
 $screen-md:                   760px; // Medium screen / tablet
 $screen-lg:                   992px; // Large screen / desktop
-$screen-xl:                   1080px; // Extra large screen / wide desktop
+$screen-xl:                   1170px; // Extra large screen / wide desktop
 
 $grid-breakpoints: (
         xs:                   0,
@@ -35,7 +35,7 @@ $container-max-widths: (
         sm:                   480px,
         md:                   760px,
         lg:                   992px,
-        xl:                   1080px
+        xl:                   1170px
 ) !default;
 
 /*
@@ -60,7 +60,7 @@ $mq-breakpoints: (
 //------------------------------------------------------------------------------
 
 
-// Color table 
+// Color table
 
 $white:                       #ffffff;
 $black:                       #000000;
@@ -99,10 +99,7 @@ $link-color-white--hover:     darken($link-color-white, 20%);
 //  Typography
 //------------------------------------------------------------------------------
 
-$font-family:                   "Proxima Nova", Arial, sans-serif;
-$font-family-acrom:             Acrom, Arial, sans-serif;
-//$font-family--serif:          Georgia, "Times New Roman", Times, serif;
-//$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family:                   'PT Sans', sans-serif;
 
 
 $font-size:                   14px;
@@ -124,6 +121,6 @@ $letter-spacing-logo:         0.15em;
 
 $regular:                     400;
 $semibold:                    600;
-$bold:                        700;
+$bold:                        'PTSansBold', sans-serif ;
 
 
