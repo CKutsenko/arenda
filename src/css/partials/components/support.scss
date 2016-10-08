@@ -1,0 +1,58 @@
+.support {
+  background-image: url(../img/Denis_L.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 60px 0 130px;
+  background-size: contain;
+  @include mq($from:xs, $until:md){
+    padding: 30px 0;
+    background: none;
+  }
+
+  &__title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-family: $bold;
+    margin-top: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+      font-family: $bold;
+    }
+  }
+
+  &__quote {
+    font-size: 16px;
+  }
+
+  &__cite {
+    padding-left: 110px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: $bold;
+    @include mq($from:xs, $until:md) {
+      padding-left: 40px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: $bold;
+    padding-top: 20px;
+    @include mq($from:xs, $until:md) {
+      font-size: 20px;
+      padding-top: 0;
+      font-family: $bold;
+    }
+  }
+
+  &__features {
+    color: #3b42b0;
+    font-size: 20px;
+    font-family: $bold;
+  }
+
+  &__features-text {
+    font-size: 16px;
+  }
+}

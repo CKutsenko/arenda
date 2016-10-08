@@ -86,12 +86,13 @@
 }
 
 
-.nav{
+.nav {
   flex: 0 0 50%;
   max-width: 50%;
   align-items: center;
   @include mq($from:xs, $until:xl){
     max-width: 100%;
+    // flex: 0 0 100%;
     position: relative;
     z-index: 100;
   }
@@ -243,6 +244,9 @@
 .header--rent {
   background-image: url(../img/Promo-block-arenda.jpg);
   min-height: 650px;
+  @include mq($from:xs, $until:sm){
+    background-image: url(../img/Promo-block-arenda.jpg);
+  }
 }
 
 .promo--rent {
@@ -259,11 +263,17 @@
 .header--resellers {
   background-image: url(../img/Promo-block-twohands.jpg);
   min-height: 650px;
+  @include mq($from:xs, $until:sm){
+    background-image: url(../img/Promo-block-twohands.jpg);
+  }
 }
 
 .header--commerce {
   background-image: url(../img/Promo-block-commerce.jpg);
   min-height: 650px;
+  @include mq($from:xs, $until:sm){
+    background-image: url(../img/Promo-block-commerce.jpg);
+  }
 }
 
 .promo--commerce {
@@ -280,6 +290,9 @@
 .header--support {
   background-image: url(../img/Promo-block-support.jpg);
   min-height: 650px;
+  @include mq($from:xs, $until:sm){
+    background-image: url(../img/Promo-block-support.jpg);
+  }
 }
 
 .promo--support {
@@ -287,5 +300,189 @@
     text-transform: uppercase;
   }
 }
+
+
+.nav-footer {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: center;
+  @include mq($from:xs, $until:xl){
+    display: none;
+  }
+}
+
+
+.nav-footer {
+
+  .row {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-top: 50px;
+    @include mq($from:xs, $until:xl){
+      padding-top: 25px;
+    }
+  }
+
+  &__logo{
+    max-width: 25%;
+    flex: 0 0 25%;
+    @include mq($from:xs, $until:xl){
+      order: 2;
+      max-width: 55%;
+      position: absolute;
+      left: 25%;
+    }
+    @include mq($from:sm, $until:md){
+      left: 35%;
+    }
+    @include mq($from:md, $until:xl){
+      left: 42%;
+    }
+    &__img{
+      display: block;
+      width: 180px;
+      height: auto;
+    }
+  }
+  &__phone-inner {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include mq($from:xs, $until:xl){
+      order: 3;
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__phone {
+    font-size: 16px;
+    @include mq($from:xs, $until:xl){
+      font-size: 0;
+      height: 20px;
+      width: 20px;
+      background-image: url(../img/phone.svg);
+      transform: rotate(270deg);
+    }
+  }
+
+  &__order {
+    font-size: 14px;
+    padding-top: 8px;
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+    @include mq($from:xs, $until:xl){
+      display: none;
+    }
+  }
+}
+
+
+.navigation-footer {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: center;
+  @include mq($from:xs, $until:xl){
+    max-width: 100%;
+    // flex: 0 0 100%;
+    position: relative;
+    z-index: 100;
+  }
+  &__hamburger{
+    display: none;
+    text-align: center;
+    @include mq($from:xs, $until:xl){
+      display: block;
+      width: 10%;
+      z-index: 1000;
+      position: absolute;
+    }
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @include mq($from:xs, $until:xl){
+      display: none;
+      padding: 0;
+      text-align: center;
+      margin-top: 0;
+      flex-direction: column;
+      // max-width: 100%;
+      position: absolute;
+      background-color: #1c202c;
+      top: 0;
+      z-index: 10;
+      padding-top: 40px;
+      text-align: left;
+      padding-bottom: 30px;
+      width: 285px;
+        .nav__item {
+          padding-top: 12px;
+        }
+    }
+  }
+
+  &__min-call,
+  &__min-order {
+    display: none;
+    @include mq($from:xs, $until:xl){
+      display: block;
+      padding-top: 20px;
+        a {
+          color: $white;
+      }
+    }
+  }
+
+  &__min-call {
+    a {
+      font-size: 16px;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &__min-order {
+    a {
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &__item{
+    text-transform: uppercase;
+
+    @include mq($from:xs, $until:xl){
+      width: 100%;
+    }
+    a {
+      color: $white;
+      font-size: 12px;
+
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}
+
+
 
 

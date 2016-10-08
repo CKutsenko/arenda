@@ -66,6 +66,9 @@
     font-family: $bold;
     margin-top: 0;
     padding-top: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 23px;
+    }
 
     p {
       margin: 0;
@@ -79,6 +82,11 @@
     border: none;
     border-bottom: 2px solid $white;
     padding: 10px 40px 10px 55px;
+  }
+
+  input:focus {
+    border-bottom: 2px solid $white;
+    outline: none;
   }
 
   &__button {

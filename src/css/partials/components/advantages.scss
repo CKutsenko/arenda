@@ -1,6 +1,9 @@
 .advantages {
   text-align: center;
   padding: 50px 0 90px;
+  @include mq($from:xs, $until:md){
+    padding: 40px 0 40px;
+  }
 
   &__wrapper {
     display: -webkit-flex;
@@ -19,12 +22,16 @@
     max-width: 33%;
   @include mq($from:xs, $until:md){
     max-width: 100%;
+    padding-bottom: 20px;
     }
 
     p  {
       margin: 0;
       font-size: 16px;
       line-height: 22px;
+      @include mq($from:xs, $until:md) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -32,10 +39,16 @@
     font-size: 46px;
     font-family: $bold;
     margin-top: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+    }
   }
 
   &__subtitle {
     font-size: 20px;
     font-family: $bold;
+    @include mq($from:xs, $until:md) {
+      font-size: 16px;
+    }
   }
 }
