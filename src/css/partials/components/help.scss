@@ -6,7 +6,6 @@
   @include mq($from:xs, $until:md){
     min-height: 320px;
     background-image: url(../img/girl_320.jpg);
-    max-height: 400px;
   }
 
   &__title {
@@ -30,12 +29,12 @@
 
   &__inner {
     max-width: 45%;
-  @include mq($from:xs, $until:md){
+  @include mq($from:xs, $until:lg){
     max-width: 100%;
     }
   }
       &__btn-inner {
-      @include mq($from:xs, $until:md) {
+      @include mq($from:xs, $until:lg) {
         padding-top: 15px;
       }
     }
@@ -47,7 +46,7 @@
     color: $white;
     padding: 15px 35px;
     text-transform: uppercase;
-    @include mq($from:xs, $until:md) {
+    @include mq($from:xs, $until:lg) {
       font-size: 14px;
       padding: 7px 20px;
       border: 1px solid $white;

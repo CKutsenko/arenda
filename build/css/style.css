@@ -1,0 +1,1513 @@
+/*
+  Project variables
+  =================
+*/
+/*
+  Flex Sass grid generator variables
+  ==================================
+
+  [flex-sass-grid-generator](https://github.com/Enkil/flex-sass-grid-generator)
+
+*/
+/*
+  Sass MQ variables
+  =================
+
+  [sass-mq](https://github.com/sass-mq/sass-mq)
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*
+  SCSS Mixin
+  ==========
+  Provides setting font-face to page
+
+  Author: Igor Timohin (timohin.i@gmail.com)
+
+ - *$font-family:* The font family of the font.
+ - *$font-group:* The font family group, e.g. roboto, dinpro, ptsans.
+ - *$font-style:* The  part of path to font file, NOT the font-style
+   CSS property.
+ - *$file-name:* The name of your file (all formats of this style need
+   to have the same file name) without its extention.
+
+  **EXAMPLE**
+
+  @include font-face($font-family, $font-group, $font-style, $file-name, $font-weight)
+
+  @include font-face('Roboto-Regular', roboto, regular, roboto-regular-webfont);
+*/
+/*
+  SCSS Mixin
+  ==========
+  Provides set font-family to selector
+
+  - *$font-family:* The font family of the font.
+  - *$font-style:* The font-style CSS property.
+  - *$file-weight:* The font-weight CSS property.
+  - *$font-callback:* The font callback, e.g. sans-serif
+
+  **EXAMPLE**
+
+  @include font-family($font-family, $font-weight, $font-style)
+
+  @include font-family('Roboto-Regular', normal, italic);
+*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'PTSansRegular', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.05em; }
+
+a {
+  text-decoration: none;
+  transition: all 0.325s ease 0s; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.bolder {
+  font-weight: 600; }
+
+.boldest {
+  font-weight: 700; }
+
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "PTSansBold"; */
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTSansBold/PTSansBold.eot");
+  src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+.header {
+  min-height: 800px;
+  background-image: url(../img/Promo-block-index.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  color: #ffffff; }
+  .header .row {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px; }
+  .header__logo {
+    max-width: 25%;
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%; }
+    .header__logo__img {
+      display: block;
+      width: 180px;
+      height: auto; }
+  .header__phone-inner {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .header__phone-inner a {
+      color: #ffffff; }
+  .header__phone {
+    font-size: 16px; }
+  .header__order {
+    font-size: 14px;
+    padding-top: 8px; }
+    .header__order:hover {
+      border-bottom: 1px solid #ffffff; }
+
+.nav {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+  -ms-flex-align: center;
+      align-items: center; }
+  .nav__hamburger {
+    display: none;
+    text-align: center; }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .nav__min-call, .nav__min-order {
+    display: none; }
+  .nav__min-call a {
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff; }
+  .nav__min-order a {
+    border-bottom: 1px solid #ffffff; }
+  .nav__item {
+    text-transform: uppercase; }
+    .nav__item a {
+      color: #ffffff;
+      font-size: 12px; }
+      .nav__item a:hover {
+        border-bottom: 1px solid #ffffff; }
+
+.hamburger {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 50; }
+  .hamburger:after {
+    content: '';
+    background-image: url(../img/bars.svg);
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0; }
+
+.hamburger-active {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 60; }
+  .hamburger-active:after {
+    content: '';
+    background-image: url(../img/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0; }
+
+.promo__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 0 0 55%;
+      flex: 0 0 55%;
+  max-width: 55%; }
+
+.promo__title {
+  font-size: 46px;
+  margin-top: 70px;
+  letter-spacing: 0;
+  font-family: "PTSansBold", sans-serif; }
+
+.promo__btn {
+  display: inline-block;
+  background-color: #ffffff;
+  max-width: 70%;
+  padding: 15px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border-radius: 5px;
+  color: #000000; }
+  .promo__btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); }
+
+.header--rent {
+  background-image: url(../img/Promo-block-arenda.jpg);
+  min-height: 650px; }
+
+.promo--rent .promo__wrapper {
+  -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+  max-width: 70%; }
+
+.header--resellers {
+  background-image: url(../img/Promo-block-twohands.jpg);
+  min-height: 650px; }
+
+.header--commerce {
+  background-image: url(../img/Promo-block-commerce.jpg);
+  min-height: 650px; }
+
+.promo--commerce .promo__wrapper {
+  -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+  max-width: 80%; }
+
+.header--support {
+  background-image: url(../img/Promo-block-support.jpg);
+  min-height: 650px; }
+
+.promo--support h1 {
+  text-transform: uppercase; }
+
+.nav-footer {
+  -ms-flex-align: center;
+      align-items: center; }
+  .nav-footer .row {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px; }
+  .nav-footer__logo {
+    max-width: 25%;
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%; }
+    .nav-footer__logo__img {
+      display: block;
+      width: 180px;
+      height: auto; }
+  .nav-footer__phone-inner {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .nav-footer__phone-inner a {
+      color: #ffffff; }
+  .nav-footer__phone {
+    font-size: 16px; }
+  .nav-footer__order {
+    font-size: 14px;
+    padding-top: 8px;
+    border-bottom: 1px solid transparent;
+    margin-top: 25px; }
+    .nav-footer__order:hover {
+      border-bottom: 1px solid #ffffff; }
+
+.navigation-footer {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+  -ms-flex-align: center;
+      align-items: center; }
+  .navigation-footer__copyright {
+    padding-top: 20px; }
+  .navigation-footer__copyright-second {
+    display: none; }
+  .navigation-footer__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .navigation-footer__min-call, .navigation-footer__min-order {
+    display: none; }
+  .navigation-footer__min-call a {
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff; }
+  .navigation-footer__min-order a {
+    border-bottom: 1px solid #ffffff; }
+  .navigation-footer__item {
+    text-transform: uppercase; }
+    .navigation-footer__item a {
+      color: #ffffff;
+      font-size: 12px; }
+      .navigation-footer__item a:hover {
+        border-bottom: 1px solid #ffffff; }
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px; }
+  .footer__contacts-block {
+    background-color: #1e2432; }
+  .footer__nav .row {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px; }
+  .footer__logo {
+    max-width: 25%;
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%; }
+    .footer__logo img {
+      display: block;
+      width: 180px;
+      height: auto;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .footer__phone-inner {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .footer__phone-inner a {
+      color: #ffffff; }
+  .footer__phone {
+    font-size: 16px; }
+  .footer__order {
+    font-size: 14px;
+    padding-top: 29px; }
+    .footer__order:hover {
+      border-bottom: 1px solid #ffffff; }
+
+.contacts {
+  padding: 60px 0 90px;
+  letter-spacing: 0; }
+  .contacts__title {
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    margin-top: 0;
+    padding-top: 0; }
+    .contacts__title p {
+      margin: 0;
+      padding: 0; }
+  .contacts__input {
+    background-color: transparent;
+    outline-width: thin;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px 40px 10px 55px; }
+  .contacts input:focus {
+    border-bottom: 2px solid #ffffff;
+    outline: none; }
+  .contacts__button {
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 10px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .6s; }
+    .contacts__button:hover {
+      background-color: rgba(255, 255, 255, 0.8); }
+
+.nav__copyright {
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-top: 32px; }
+
+.problems {
+  background-color: #1e2432;
+  color: #ffffff;
+  padding: 100px 0; }
+  .problems__wrapper {
+    max-width: 60%; }
+  .problems__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif; }
+  .problems__list {
+    list-style-type: none;
+    padding-left: 0; }
+  .problems__item {
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 0; }
+
+.experts {
+  background-image: url(../img/house_right.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 60px 0 130px;
+  background-size: contain; }
+  .experts__wrapper {
+    max-width: 55%; }
+  .experts__block-title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif; }
+  .experts__title {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 35px;
+    font-family: "PTSansBold", sans-serif; }
+  .experts__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0; }
+  .experts__block:nth-of-type(1) {
+    max-width: 78%; }
+  .experts__block:nth-of-type(2) {
+    max-width: 62%; }
+  .experts__block:nth-of-type(3) .experts__text {
+    max-width: 62%; }
+  .experts__block:nth-of-type(4) .experts__text {
+    max-width: 78%; }
+  .experts__block:nth-of-type(5) {
+    max-width: 85%; }
+
+.help {
+  background-image: url(../img/photo_girl.jpg);
+  background-size: cover;
+  min-height: 650px;
+  color: #ffffff; }
+  .help__title {
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    letter-spacing: 0; }
+  .help__wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+  .help__inner {
+    max-width: 45%; }
+  .help__btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 35px;
+    text-transform: uppercase; }
+    .help__btn:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+
+.features {
+  position: relative; }
+
+.features-first {
+  padding-bottom: 60px;
+  position: relative; }
+  .features-first__block-title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-weight: 500; }
+  .features-first__wrapper {
+    position: relative;
+    max-width: 42%; }
+  .features-first__step {
+    position: absolute;
+    top: 5px; }
+    .features-first__step:after {
+      position: absolute;
+      content: '';
+      background-color: #000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: 100px; }
+    .features-first__step:before {
+      position: absolute;
+      content: '';
+      background-color: #000;
+      width: 1px;
+      height: 100px;
+      left: 109px; }
+  .features-first__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "PTSansBold", sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    padding-left: 190px; }
+  .features-first__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-top: 7px;
+    padding-left: 190px; }
+
+.features-second {
+  background-color: #99c7ff;
+  padding: 20px 0 60px; }
+  .features-second__block-title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-family: "PTSansBold", sans-serif;
+    line-height: 46px; }
+    .features-second__block-title p {
+      margin: 0;
+      padding: 0; }
+  .features-second__wrapper {
+    position: relative;
+    max-width: 55%;
+    margin-left: 36%; }
+  .features-second__step {
+    position: absolute;
+    top: 5px; }
+    .features-second__step:after {
+      position: absolute;
+      content: '';
+      background-color: #000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: 100px; }
+    .features-second__step:before {
+      position: absolute;
+      content: '';
+      background-color: #000;
+      width: 1px;
+      height: 130px;
+      left: 109px; }
+  .features-second__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "PTSansBold", sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    padding-left: 190px; }
+  .features-second__text {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-top: 7px;
+    padding-left: 190px; }
+
+.features-second__step--last:before,
+.features-first__step--last:before {
+  display: none; }
+
+.features-second__step--prelast:before {
+  height: 100px; }
+
+.payment {
+  background-image: url(../img/photo_legenda.jpg);
+  background-size: cover;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding: 60px 0; }
+  .payment__block-title {
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    margin: 0; }
+    .payment__block-title p {
+      margin: 0;
+      padding: 0; }
+  .payment__sub-title {
+    font-size: 20px;
+    font-family: "PTSansBold", sans-serif; }
+  .payment__block-inner {
+    padding-top: 30px; }
+    .payment__block-inner p {
+      font-size: 16px;
+      line-height: 22px;
+      margin: 0; }
+  .payment__title {
+    font-size: 20px;
+    font-family: "PTSansBold", sans-serif;
+    text-transform: uppercase; }
+
+.advantages {
+  text-align: center;
+  padding: 50px 0 90px; }
+  .advantages__wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .advantages__inner {
+    max-width: 33%; }
+    .advantages__inner p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px; }
+  .advantages__title {
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    margin-top: 0; }
+  .advantages__subtitle {
+    font-size: 20px;
+    font-family: "PTSansBold", sans-serif; }
+
+.instruction {
+  padding: 60px 0 100px; }
+  .instruction__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif; }
+  .instruction__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 35px;
+    font-family: "PTSansBold", sans-serif; }
+  .instruction p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
+
+.resale {
+  padding: 60px 0 100px; }
+  .resale__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    max-width: 86%; }
+  .resale__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 25px;
+    font-family: "PTSansBold", sans-serif; }
+  .resale p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
+
+.resale__wrapper--second {
+  padding-top: 60px; }
+
+.business {
+  padding: 60px 0 100px; }
+  .business__title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 46px;
+    font-family: "PTSansBold", sans-serif;
+    max-width: 86%; }
+  .business__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-top: 25px;
+    font-family: "PTSansBold", sans-serif; }
+  .business p {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: 0; }
+
+.support {
+  background-image: url(../img/Denis_L.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 60px 0 130px;
+  background-size: contain; }
+  .support__title {
+    font-size: 46px;
+    letter-spacing: 0;
+    font-family: "PTSansBold", sans-serif;
+    margin-top: 0; }
+  .support__quote {
+    font-size: 16px; }
+  .support__cite {
+    padding-left: 110px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "PTSansBold", sans-serif; }
+  .support__subtitle {
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: "PTSansBold", sans-serif;
+    padding-top: 20px; }
+  .support__features {
+    color: #3b42b0;
+    font-size: 20px;
+    font-family: "PTSansBold", sans-serif; }
+  .support__features-text {
+    font-size: 16px; }
+  @media (min-width: 540px) {
+  .container {
+    max-width: 480px; } }
+  @media (min-width: 780px) {
+  .container {
+    max-width: 810px; } }
+  @media (min-width: 1120px) {
+  .container {
+    max-width: 1080px; } }
+  @media (min-width: 1280px) {
+  .container {
+    max-width: 1170px; } }
+  @media (max-width: 33.74em) {
+  .header {
+    min-height: 500px;
+    background-image: url(../img/Promo-block-index-320.jpg); }
+  .promo__title {
+    margin-top: 65px;
+    font-size: 26px; }
+  .header--rent {
+    background-image: url(../img/Promo-block-arenda.jpg); }
+  .header--resellers {
+    background-image: url(../img/Promo-block-twohands.jpg); }
+  .header--commerce {
+    background-image: url(../img/Promo-block-commerce.jpg); }
+  .header--support {
+    background-image: url(../img/Promo-block-support.jpg); }
+  .features-first__step:before {
+    left: 70px;
+    height: 172px; }
+  .features-second__step:before {
+    left: 70px;
+    height: 172px; }
+  .features-second__step--prelast:before {
+    height: 100px; } }
+  @media (max-width: 79.99em) {
+  .header .row {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 25px; }
+  .header__logo {
+    -ms-flex-order: 2;
+    order: 2;
+    max-width: 55%;
+    position: absolute;
+    left: 25%; }
+  .header__phone-inner {
+    -ms-flex-order: 3;
+    order: 3;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%; }
+  .header__phone {
+    font-size: 0;
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/phone.svg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); }
+  .header__order {
+    display: none; }
+  .nav {
+    max-width: 100%;
+    position: relative;
+    z-index: 100; }
+  .nav__hamburger {
+    display: block;
+    width: 10%;
+    z-index: 1000;
+    position: absolute; }
+  .nav__list {
+    display: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1c202c;
+    top: 0;
+    z-index: 10;
+    padding-top: 40px;
+    text-align: left;
+    padding-bottom: 30px;
+    width: 285px; }
+  .nav__list .nav__item {
+    padding-top: 12px; }
+  .nav__min-call, .nav__min-order {
+    display: block;
+    padding-top: 20px; }
+  .nav__min-call a, .nav__min-order a {
+    color: #ffffff; }
+  .nav__item {
+    width: 100%; }
+  .promo__wrapper {
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .promo__btn {
+    display: none; }
+  .promo--rent .promo__wrapper {
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .promo--commerce .promo__wrapper {
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .nav-footer .row {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .nav-footer__logo {
+    -ms-flex-order: 1;
+    order: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 28%;
+    max-width: 65%;
+    padding-bottom: 20px; }
+  .nav-footer__phone-inner {
+    -ms-flex-order: 2;
+    order: 2;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .nav-footer__phone {
+    margin-bottom: 25px; }
+  .nav-footer__order {
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ffffff; }
+  .navigation-footer {
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-order: 3;
+    order: 3; }
+  .navigation-footer__copyright {
+    display: none; }
+  .navigation-footer__copyright-second {
+    display: block; }
+  .navigation-footer__list {
+    display: none; }
+  .navigation-footer__min-call, .navigation-footer__min-order {
+    display: block;
+    padding-top: 20px; }
+  .navigation-footer__min-call a, .navigation-footer__min-order a {
+    color: #ffffff; }
+  .navigation-footer__item {
+    width: 100%; } }
+  @media (min-width: 33.75em) and (max-width: 47.99em) {
+  .header__logo {
+    left: 35%; }
+  .nav-footer__logo {
+    left: 35%; }
+  .features-first__step:before {
+    left: 70px;
+    height: 118px; } }
+  @media (min-width: 48em) and (max-width: 79.99em) {
+  .header__logo {
+    left: 42%; }
+  .nav-footer__logo {
+    left: 42%; } }
+  @media (max-width: 47.99em) {
+  .contacts__title {
+    font-size: 23px; }
+  .problems {
+    padding: 30px 0; }
+  .problems__wrapper {
+    max-width: 100%; }
+  .problems__title {
+    font-size: 26px; }
+  .problems__item {
+    font-size: 16px; }
+  .experts__block:nth-of-type(3) .experts__text {
+    max-width: 100%; }
+  .experts__block:nth-of-type(4) .experts__text {
+    max-width: 100%; }
+  .experts__block:nth-of-type(5) {
+    max-width: 100%; }
+  .help {
+    min-height: 320px;
+    background-image: url(../img/girl_320.jpg); }
+  .help__title {
+    font-size: 26px; }
+  .features-first__block-title {
+    font-size: 26px;
+    font-family: "PTSansBold", sans-serif; }
+  .features-first__step:after {
+    left: 60px; }
+  .payment__block-title {
+    font-size: 26px; }
+  .payment__sub-title {
+    font-size: 16px; }
+  .payment__block-inner {
+    padding-top: 15px; }
+  .payment__block-inner p {
+    font-size: 14px; }
+  .payment__title {
+    font-size: 16px; }
+  .advantages {
+    padding: 40px 0 40px; }
+  .advantages__wrapper {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .advantages__inner {
+    max-width: 100%;
+    padding-bottom: 20px; }
+  .advantages__inner p {
+    font-size: 14px; }
+  .advantages__title {
+    font-size: 26px; }
+  .advantages__subtitle {
+    font-size: 16px; }
+  .instruction {
+    padding: 30px 0; }
+  .instruction__title {
+    font-size: 26px; }
+  .instruction__subtitle {
+    font-size: 16px;
+    padding-top: 20px; }
+  .instruction p {
+    font-size: 14px; }
+  .resale {
+    padding: 30px 0; }
+  .resale__title {
+    font-size: 26px;
+    max-width: 100%; }
+  .resale__subtitle {
+    font-size: 16px;
+    padding-top: 20px; }
+  .resale p {
+    font-size: 14px; }
+  .business {
+    padding: 30px 0; }
+  .business__title {
+    font-size: 26px;
+    max-width: 100%; }
+  .business__subtitle {
+    font-size: 16px;
+    padding-top: 20px; }
+  .business p {
+    font-size: 14px; }
+  .support {
+    padding: 30px 0;
+    background: none; }
+  .support__title {
+    font-size: 26px;
+    font-family: "PTSansBold", sans-serif; }
+  .support__cite {
+    padding-left: 40px; }
+  .support__subtitle {
+    font-size: 20px;
+    padding-top: 0;
+    font-family: "PTSansBold", sans-serif; } }
+  @media (max-width: 63.99em) {
+  .experts {
+    padding: 30px 0;
+    background: none; }
+  .experts__wrapper {
+    max-width: 100%; }
+  .experts__block-title {
+    font-size: 26px; }
+  .experts__title {
+    font-size: 16px;
+    padding-top: 20px; }
+  .experts__text {
+    font-size: 14px; }
+  .experts__block:nth-of-type(1) {
+    max-width: 100%; }
+  .experts__block:nth-of-type(2) {
+    max-width: 100%; }
+  .help__inner {
+    max-width: 100%; }
+  .help__btn-inner {
+    padding-top: 15px; }
+  .help__btn {
+    font-size: 14px;
+    padding: 7px 20px;
+    border: 1px solid #ffffff; }
+  .features-first__wrapper {
+    margin-left: 0;
+    max-width: 100%; }
+  .features-first__title {
+    padding-left: 100px; }
+  .features-first__text {
+    padding-left: 100px; }
+  .features-second__block-title {
+    font-size: 26px; }
+  .features-second__wrapper {
+    margin-left: 0;
+    max-width: 100%; }
+  .features-second__step:after {
+    left: 60px; }
+  .features-second__title {
+    padding-left: 100px; }
+  .features-second__text {
+    padding-left: 100px; } }
+  @media (min-width: 33.75em) and (max-width: 63.99em) {
+  .features-second__step:before {
+    left: 70px;
+    height: 150px; } }

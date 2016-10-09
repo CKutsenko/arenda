@@ -4,14 +4,14 @@
   background-position: right center;
   padding: 60px 0 130px;
   background-size: contain;
-  @include mq($from:xs, $until:md){
+  @include mq($from:xs, $until:lg){
     padding: 30px 0;
     background: none;
   }
 
   &__wrapper {
     max-width: 55%;
-  @include mq($from:xs, $until:md){
+  @include mq($from:xs, $until:lg){
     max-width: 100%;
     }
   }
@@ -21,7 +21,7 @@
     letter-spacing: 0;
     font-size: 46px;
     font-family: $bold;
-      @include mq($from:xs, $until:md) {
+      @include mq($from:xs, $until:lg) {
       font-size: 26px;
     }
   }
@@ -33,7 +33,7 @@
     letter-spacing: 0;
     padding-top: 35px;
     font-family: $bold;
-    @include mq($from:xs, $until:md) {
+    @include mq($from:xs, $until:lg) {
       font-size: 16px;
       padding-top: 20px;
     }
@@ -43,20 +43,20 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0;
-    @include mq($from:xs, $until:md) {
+    @include mq($from:xs, $until:lg) {
       font-size: 14px;
     }
   }
 
   &__block:nth-of-type(1) {
     max-width: 78%;
-  @include mq($from:xs, $until:md){
+  @include mq($from:xs, $until:lg){
     max-width: 100%;
     }
   }
   &__block:nth-of-type(2) {
     max-width: 62%;
-  @include mq($from:xs, $until:md){
+  @include mq($from:xs, $until:lg){
     max-width: 100%;
     }
   }
