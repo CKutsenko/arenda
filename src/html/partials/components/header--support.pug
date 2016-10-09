@@ -24,10 +24,9 @@ include ../abstracts/bemto/bemto.pug
           +e.LI.min-call
             a(href="tel:88129393198") 8 (812) 939-31-98
           +e.LI.min-order
-            a(href="#") Обратный звонок
-      +e.phone-inner
+            +e.A.ord.go_to(href="#form") Обратный звонок      +e.phone-inner
         +e.A.phone(href="tel:88129393198") 8 (812) 939-31-98
-        +e.A.order(href="#") Обратный звонок
+        +e.A.order.go_to(href="#form") Обратный звонок
   //Promo
   +b.promo--support
     .container
@@ -36,5 +35,5 @@ include ../abstracts/bemto/bemto.pug
           </br>наиболее комфортной
           </br>и понятной
         +e.btn-wrapper
-          +e.A.btn(href="#") Получить бесплатную консультацию
+          +e.A.btn.go_to(href="#form") Получить бесплатную консультацию
 

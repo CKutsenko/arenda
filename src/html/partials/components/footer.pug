@@ -7,7 +7,7 @@ include ../abstracts/bemto/bemto.pug
       +b.contacts
         +e.H2.title Ответим на любые вопросы
           p Звоните 8 (812) 939-31-98
-        +e.FORM.form
+        +e.FORM.form(id='form')
           +e.LABEL.label
             +e.INPUT.input(type="tel" name="phone" placeholder="Ваш номер телефона")
           p
@@ -30,9 +30,12 @@ include ../abstracts/bemto/bemto.pug
             +e.LI.item
               a(href="support.html") Служба заботы
           +e.P.copyright © 2010—2016 «Экспертное агентство Дениса Леушина»
+          +e.P.copyright-second © 2010—2016
+            </br>
+              |«Экспертное агентство Дениса Леушина»
         +e.phone-inner
           +e.A.phone(href="tel:88129393198") 8 (812) 939-31-98
-          +e.A.order(href="#") Обратный звонок
+          +e.A.order.go_to(href="#form") Обратный звонок
 
 
 

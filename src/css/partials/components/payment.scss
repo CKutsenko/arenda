@@ -9,6 +9,9 @@
     font-size: 46px;
     font-family: $bold;
     margin: 0;
+    @include mq($from:xs, $until:md) {
+      font-size: 26px;
+    }
 
     p {
       margin: 0;
@@ -19,15 +22,24 @@
   &__sub-title {
     font-size: 20px;
     font-family: $bold;
+    @include mq($from:xs, $until:md) {
+      font-size: 16px;
+    }
   }
 
   &__block-inner {
     padding-top: 30px;
+    @include mq($from:xs, $until:md) {
+      padding-top: 15px;
+    }
 
     p {
       font-size: 16px;
       line-height: 22px;
       margin: 0;
+      @include mq($from:xs, $until:md) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -35,5 +47,8 @@
     font-size: 20px;
     font-family: $bold;
     text-transform: uppercase;
+    @include mq($from:xs, $until:md) {
+      font-size: 16px;
+    }
   }
 }
