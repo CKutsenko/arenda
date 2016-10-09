@@ -954,6 +954,9 @@ img {
     .help__btn:hover {
       background-color: rgba(0, 0, 0, 0.1); }
 
+.features {
+  position: relative; }
+
 .features-first {
   padding-bottom: 60px;
   position: relative; }
@@ -998,18 +1001,7 @@ img {
 
 .features-second {
   background-color: #99c7ff;
-  padding: 20px 0 60px;
-  position: relative; }
-  .features-second:before {
-    content: '';
-    position: absolute;
-    background-image: url(../img/line_horizont.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 650px;
-    left: 209px;
-    top: -5%; }
+  padding: 20px 0 60px; }
   .features-second__block-title {
     font-size: 46px;
     letter-spacing: 0;
@@ -1055,8 +1047,12 @@ img {
     margin-top: 7px;
     padding-left: 190px; }
 
-.features-second__step--last:before {
+.features-second__step--last:before,
+.features-first__step--last:before {
   display: none; }
+
+.features-second__step--prelast:before {
+  height: 100px; }
 
 .payment {
   background-image: url(../img/photo_legenda.jpg);
@@ -1235,9 +1231,19 @@ img {
   .header--commerce {
     background-image: url(../img/Promo-block-commerce.jpg); }
   .header--support {
-    background-image: url(../img/Promo-block-support.jpg); } }
+    background-image: url(../img/Promo-block-support.jpg); }
+  .features-first__step:before {
+    left: 70px;
+    height: 172px; }
+  .features-second__step:before {
+    left: 70px;
+    height: 172px; }
+  .features-second__step--prelast:before {
+    height: 100px; } }
   @media (max-width: 79.99em) {
   .header .row {
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding-top: 25px; }
   .header__logo {
     -ms-flex-order: 2;
@@ -1357,7 +1363,10 @@ img {
   .header__logo {
     left: 35%; }
   .nav-footer__logo {
-    left: 35%; } }
+    left: 35%; }
+  .features-first__step:before {
+    left: 70px;
+    height: 118px; } }
   @media (min-width: 48em) and (max-width: 79.99em) {
   .header__logo {
     left: 42%; }
@@ -1374,22 +1383,6 @@ img {
     font-size: 26px; }
   .problems__item {
     font-size: 16px; }
-  .experts {
-    padding: 30px 0;
-    background: none; }
-  .experts__wrapper {
-    max-width: 100%; }
-  .experts__block-title {
-    font-size: 26px; }
-  .experts__title {
-    font-size: 16px;
-    padding-top: 20px; }
-  .experts__text {
-    font-size: 14px; }
-  .experts__block:nth-of-type(1) {
-    max-width: 100%; }
-  .experts__block:nth-of-type(2) {
-    max-width: 100%; }
   .experts__block:nth-of-type(3) .experts__text {
     max-width: 100%; }
   .experts__block:nth-of-type(4) .experts__text {
@@ -1398,21 +1391,14 @@ img {
     max-width: 100%; }
   .help {
     min-height: 320px;
-    background-image: url(../img/girl_320.jpg);
-    max-height: 400px; }
+    background-image: url(../img/girl_320.jpg); }
   .help__title {
     font-size: 26px; }
-  .help__inner {
-    max-width: 100%; }
-  .help__btn-inner {
-    padding-top: 15px; }
-  .help__btn {
-    font-size: 14px;
-    padding: 7px 20px;
-    border: 1px solid #ffffff; }
   .features-first__block-title {
     font-size: 26px;
     font-family: "PTSansBold", sans-serif; }
+  .features-first__step:after {
+    left: 60px; }
   .payment__block-title {
     font-size: 26px; }
   .payment__sub-title {
@@ -1479,5 +1465,49 @@ img {
     padding-top: 0;
     font-family: "PTSansBold", sans-serif; } }
   @media (max-width: 63.99em) {
+  .experts {
+    padding: 30px 0;
+    background: none; }
+  .experts__wrapper {
+    max-width: 100%; }
+  .experts__block-title {
+    font-size: 26px; }
+  .experts__title {
+    font-size: 16px;
+    padding-top: 20px; }
+  .experts__text {
+    font-size: 14px; }
+  .experts__block:nth-of-type(1) {
+    max-width: 100%; }
+  .experts__block:nth-of-type(2) {
+    max-width: 100%; }
+  .help__inner {
+    max-width: 100%; }
+  .help__btn-inner {
+    padding-top: 15px; }
+  .help__btn {
+    font-size: 14px;
+    padding: 7px 20px;
+    border: 1px solid #ffffff; }
+  .features-first__wrapper {
+    margin-left: 0;
+    max-width: 100%; }
+  .features-first__title {
+    padding-left: 100px; }
+  .features-first__text {
+    padding-left: 100px; }
   .features-second__block-title {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .features-second__wrapper {
+    margin-left: 0;
+    max-width: 100%; }
+  .features-second__step:after {
+    left: 60px; }
+  .features-second__title {
+    padding-left: 100px; }
+  .features-second__text {
+    padding-left: 100px; } }
+  @media (min-width: 33.75em) and (max-width: 63.99em) {
+  .features-second__step:before {
+    left: 70px;
+    height: 150px; } }
