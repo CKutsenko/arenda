@@ -12,6 +12,14 @@ include ../abstracts/bemto/bemto.pug
             +e.INPUT.input(type="tel" name="phone" placeholder="Ваш номер телефона")
           p
            +e.BUTTON.button Перезвоните мне
+  +b.contact-send
+     .container
+       +e.H2.thanks Спасибо!
+       +e.img
+         img(src="img/success.svg")
+       +e.P.text Мы получили вашу заявку и
+         </br>
+         | перезвоним вам очень быстро!
   +b.nav-footer
     .container
       .row
