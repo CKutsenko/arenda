@@ -1,12 +1,11 @@
 .header{
-  min-height: 800px;
+  height: 100vh;
   background-image: url(../img/Promo-block-index.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   background-size: cover;
   color: $white;
   @include mq($from:xs, $until:sm){
-    min-height: 500px;
     background-image: url(../img/Promo-block-index-320.jpg);
   }
 
@@ -92,7 +91,7 @@
   max-width: 50%;
   align-items: center;
   @include mq($from:xs, $until:xl){
-    max-width: 100%;
+    width: 100%;
     position: relative;
     z-index: 100;
   }

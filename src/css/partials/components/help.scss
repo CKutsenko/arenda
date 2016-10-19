@@ -1,7 +1,7 @@
 .help {
   background-image: url(../img/photo_girl.jpg);
   background-size: cover;
-  min-height: 650px;
+  height: 100vh;
   color: $white;
   @include mq($from:xs, $until:md){
     min-height: 320px;

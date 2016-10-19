@@ -527,10 +527,10 @@ img {
   font-weight: normal; }
 
 .header {
-  min-height: 800px;
+  height: 100vh;
   background-image: url(../img/Promo-block-index.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   background-size: cover;
   color: #ffffff; }
   .header .row {
@@ -860,7 +860,18 @@ img {
 .contacts {
   padding: 60px 0 90px;
   letter-spacing: 0;
-  max-height: 430px; }
+  height: 100vh;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .contacts__title {
     font-size: 46px;
     font-family: "PTSansBold", sans-serif;
@@ -955,7 +966,7 @@ img {
 .help {
   background-image: url(../img/photo_girl.jpg);
   background-size: cover;
-  min-height: 650px;
+  height: 100vh;
   color: #ffffff; }
   .help__title {
     font-size: 46px;
@@ -1243,12 +1254,11 @@ img {
   @media (min-width: 1120px) {
   .container {
     max-width: 1080px; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 1800px) {
   .container {
     max-width: 1170px; } }
   @media (max-width: 33.74em) {
   .header {
-    min-height: 500px;
     background-image: url(../img/Promo-block-index-320.jpg); }
   .promo__title {
     margin-top: 65px;
@@ -1296,7 +1306,7 @@ img {
   .header__order {
     display: none; }
   .nav {
-    max-width: 100%;
+    width: 100%;
     position: relative;
     z-index: 100; }
   .nav__hamburger {
@@ -1410,8 +1420,6 @@ img {
   .contact-send__text {
     font-size: 18px;
     margin-top: 40px; }
-  .contacts {
-    max-height: 300px; }
   .contacts__title {
     font-size: 23px; }
   .problems {

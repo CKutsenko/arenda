@@ -2,32 +2,33 @@ include ../abstracts/bemto/bemto.pug
 
 // Header
 +b.HEADER.header
-  .container
-    .row
-      //Logo
-      +e.logo
-         img(src="img/logo_agency.png")
-      +b.NAV.nav
-        +e.hamburger
-          +b.A.hamburger(href="#")
-        +e.UL.list
-          +e.LI.item
-             a(href="index.html") Новостройки
-          +e.LI.item
-            a(href="rent.html") Аренда
-          +e.LI.item
-            a(href="resellers.html") Вторичная
-          +e.LI.item
-            a(href="commerce.html") Коммерция
-          +e.LI.item
-            a(href="support.html") Служба заботы
-          +e.LI.min-call
-            a(href="tel:88129393198") 8 (812) 939-31-98
-          +e.LI.min-order
-            +e.A.ord.go_to(href="#form") Обратный звонок
-      +e.phone-inner
-        +e.A.phone(href="tel:88129393198") 8 (812) 939-31-98
-        +e.A.order.go_to(href="#form") Обратный звонок
+  +e.bgr
+     .container
+      .row
+        //Logo
+        +e.A.logo(href="index.html")
+          img(src="img/logo_agency.png")
+        +b.NAV.nav
+          +e.hamburger
+            +b.A.hamburger(href="#")
+          +e.UL.list
+            +e.LI.item
+              a(href="index.html") Новостройки
+            +e.LI.item
+              a(href="rent.html") Аренда
+            +e.LI.item
+              a(href="resellers.html") Вторичная
+            +e.LI.item
+              a(href="commerce.html") Коммерция
+            +e.LI.item
+              a(href="support.html") Служба заботы
+            +e.LI.min-call
+              a(href="tel:88129393198") 8 (812) 939-31-98
+            +e.LI.min-order
+              +e.A.ord.go_to(href="#form") Обратный звонок
+        +e.phone-inner
+          +e.A.phone(href="tel:88129393198") 8 (812) 939-31-98
+          +e.A.order.go_to(href="#form") Обратный звонок
   //Promo
   +b.promo
     .container

@@ -106,9 +106,18 @@
 .contacts {
   padding: 60px 0 90px;
   letter-spacing: 0;
-  max-height: 430px;
+  // max-height: 430px;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   @include mq($from:xs, $until:md) {
-    max-height: 300px;
+    // max-height: 300px;
   }
 
   &__title {
