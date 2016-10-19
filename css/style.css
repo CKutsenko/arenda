@@ -527,12 +527,8 @@ img {
   font-weight: normal; }
 
 .header {
-  height: 100vh;
-  background-image: url(../img/Promo-block-index.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  color: #ffffff; }
+  color: #fff;
+  position: relative; }
   .header .row {
     -ms-flex-pack: justify;
         justify-content: space-between;
@@ -669,9 +665,23 @@ img {
   .promo__btn:hover {
     background-color: rgba(255, 255, 255, 0.8); }
 
+.header--index .header__bgr {
+  background-color: #1e2432; }
+
+.header--index .promo {
+  height: 100vh;
+  background-image: url(../img/Promo-block-index.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #ffffff; }
+
 .header--rent {
-  background-image: url(../img/Promo-block-arenda.jpg);
-  min-height: 650px; }
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(../img/Promo-block-arenda.jpg); }
 
 .promo--rent .promo__wrapper {
   -ms-flex: 0 0 70%;
@@ -679,12 +689,18 @@ img {
   max-width: 70%; }
 
 .header--resellers {
-  background-image: url(../img/Promo-block-twohands.jpg);
-  min-height: 650px; }
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(../img/Promo-block-twohands.jpg); }
 
 .header--commerce {
   background-image: url(../img/Promo-block-commerce.jpg);
-  min-height: 650px; }
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
 
 .promo--commerce .promo__wrapper {
   -ms-flex: 0 0 80%;
@@ -693,7 +709,10 @@ img {
 
 .header--support {
   background-image: url(../img/Promo-block-support.jpg);
-  min-height: 650px; }
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
 
 .promo--support h1 {
   text-transform: uppercase; }
@@ -1023,7 +1042,7 @@ img {
       content: '';
       background-color: #000;
       width: 1px;
-      height: 100px;
+      height: 500px;
       left: 109px; }
   .features-first__title {
     font-size: 20px;
@@ -1052,9 +1071,7 @@ img {
       margin: 0;
       padding: 0; }
   .features-second__wrapper {
-    position: relative;
-    max-width: 55%;
-    margin-left: 36%; }
+    position: relative; }
   .features-second__step {
     position: absolute;
     top: 5px; }
@@ -1071,8 +1088,9 @@ img {
       content: '';
       background-color: #000;
       width: 1px;
-      height: 130px;
-      left: 109px; }
+      height: 170px;
+      left: 109px;
+      z-index: 1; }
   .features-second__title {
     font-size: 20px;
     text-transform: uppercase;
@@ -1087,12 +1105,26 @@ img {
     margin-top: 7px;
     padding-left: 190px; }
 
-.features-second__step--last:before,
-.features-first__step--last:before {
-  display: none; }
+.features-second__block-title {
+  padding-left: 100px; }
 
-.features-second__step--prelast:before {
-  height: 100px; }
+.features-second__step--9:before {
+  height: 300px; }
+
+.features-second__step--7:before {
+  height: 290px; }
+
+.features-second__step--10:before {
+  height: 290px; }
+
+.features-second__step--11:before {
+  height: 290px; }
+
+.features-second__step--12:before {
+  background-color: #99c7ff;
+  z-index: 100;
+  height: 130px;
+  top: 20px; }
 
 .payment {
   background-image: url(../img/photo_legenda.jpg);
@@ -1239,51 +1271,44 @@ img {
     letter-spacing: 0;
     font-family: "PTSansBold", sans-serif;
     padding-top: 20px; }
+  .support__list {
+    padding: 0;
+    position: relative; }
+  .support__item {
+    list-style-type: none; }
   .support__features {
     color: #3b42b0;
     font-size: 20px;
-    font-family: "PTSansBold", sans-serif; }
+    font-family: "PTSansBold", sans-serif;
+    cursor: pointer; }
   .support__features-text {
     font-size: 16px; }
-  @media (min-width: 540px) {
+
+.active .support__features-text {
+  display: block; }
+
+.support__features-text {
+  display: none; }
+
+@media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-  @media (min-width: 780px) {
+
+@media (min-width: 780px) {
   .container {
     max-width: 810px; } }
-  @media (min-width: 1120px) {
+
+@media (min-width: 1120px) {
   .container {
     max-width: 1080px; } }
-  @media (min-width: 1800px) {
+
+@media (min-width: 1800px) {
   .container {
     max-width: 1170px; } }
-  @media (max-width: 33.74em) {
-  .header {
-    background-image: url(../img/Promo-block-index-320.jpg); }
-  .promo__title {
-    margin-top: 65px;
-    font-size: 26px; }
-  .header--rent {
-    background-image: url(../img/Promo-block-arenda.jpg); }
-  .header--resellers {
-    background-image: url(../img/Promo-block-twohands.jpg); }
-  .header--commerce {
-    background-image: url(../img/Promo-block-commerce.jpg); }
-  .header--support {
-    background-image: url(../img/Promo-block-support.jpg); }
-  .features-first__step:before {
-    left: 70px;
-    height: 172px; }
-  .features-second__step:before {
-    left: 70px;
-    height: 172px; }
-  .features-second__step--prelast:before {
-    height: 100px; } }
-  @media (max-width: 79.99em) {
+
+@media (max-width: 79.99em) {
   .header .row {
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-top: 25px; }
+    display: block; }
   .header__logo {
     -ms-flex-order: 2;
     order: 2;
@@ -1300,6 +1325,8 @@ img {
     font-size: 0;
     height: 20px;
     width: 20px;
+    position: absolute;
+    right: 7%;
     background-image: url(../img/phone.svg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg); }
@@ -1307,13 +1334,13 @@ img {
     display: none; }
   .nav {
     width: 100%;
-    position: relative;
     z-index: 100; }
   .nav__hamburger {
     display: block;
     width: 10%;
     z-index: 1000;
-    position: absolute; }
+    position: absolute;
+    left: 3%; }
   .nav__list {
     display: none;
     padding: 0;
@@ -1324,11 +1351,14 @@ img {
     position: absolute;
     background-color: #1c202c;
     top: 0;
+    left: 0;
     z-index: 10;
     padding-top: 40px;
     text-align: left;
     padding-bottom: 30px;
-    width: 285px; }
+    width: 94vw;
+    padding-left: 12%;
+    padding-top: 80px; }
   .nav__list .nav__item {
     padding-top: 12px; }
   .nav__min-call, .nav__min-order {
@@ -1398,20 +1428,47 @@ img {
     color: #ffffff; }
   .navigation-footer__item {
     width: 100%; } }
-  @media (min-width: 33.75em) and (max-width: 47.99em) {
+
+@media (min-width: 33.75em) and (max-width: 47.99em) {
   .header__logo {
     left: 35%; }
+  .nav__hamburger {
+    left: 7%; }
   .nav-footer__logo {
-    left: 35%; }
-  .features-first__step:before {
-    left: 70px;
-    height: 118px; } }
-  @media (min-width: 48em) and (max-width: 79.99em) {
+    left: 35%; } }
+
+@media (min-width: 48em) and (max-width: 79.99em) {
   .header__logo {
     left: 42%; }
   .nav-footer__logo {
     left: 42%; } }
-  @media (max-width: 47.99em) {
+
+@media (max-width: 79.99em) and (min-width: 33.75em) and (max-width: 79.99em) {
+  .nav__list {
+    width: 96vw; } }
+
+@media (max-width: 33.74em) {
+  .promo__title {
+    margin-top: 95px;
+    font-size: 26px; }
+  .header--index .header__bgr {
+    background-color: #1c202c; }
+  .header--index .promo {
+    background-image: url(../img/Promo-block-index-320.jpg); }
+  .header--rent {
+    background-image: url(../img/Promo-block-arenda.jpg); }
+  .header--resellers {
+    background-image: url(../img/Promo-block-twohands.jpg); }
+  .header--commerce {
+    background-image: url(../img/Promo-block-commerce.jpg); }
+  .header--support {
+    background-image: url(../img/Promo-block-support.jpg); }
+  .features-first__step:before {
+    left: 70px; }
+  .features-second__step:before {
+    left: 70px; } }
+
+@media (max-width: 47.99em) {
   .contact-send {
     max-height: 300px; }
   .contact-send__thanks {
@@ -1444,8 +1501,6 @@ img {
   .features-first__block-title {
     font-size: 26px;
     font-family: "PTSansBold", sans-serif; }
-  .features-first__step:after {
-    left: 60px; }
   .payment__block-title {
     font-size: 26px; }
   .payment__sub-title {
@@ -1511,7 +1566,8 @@ img {
     font-size: 20px;
     padding-top: 0;
     font-family: "PTSansBold", sans-serif; } }
-  @media (max-width: 63.99em) {
+
+@media (max-width: 63.99em) {
   .experts {
     padding: 30px 0;
     background: none; }
@@ -1539,6 +1595,8 @@ img {
   .features-first__wrapper {
     margin-left: 0;
     max-width: 100%; }
+  .features-first__step:after {
+    left: 60px; }
   .features-first__title {
     padding-left: 100px; }
   .features-first__text {
@@ -1554,7 +1612,56 @@ img {
     padding-left: 100px; }
   .features-second__text {
     padding-left: 100px; } }
-  @media (min-width: 33.75em) and (max-width: 63.99em) {
+
+@media (min-width: 33.75em) and (max-width: 63.99em) {
+  .features-first__step:before {
+    left: 70px; }
   .features-second__step:before {
-    left: 70px;
+    left: 70px; }
+  .features-second__step--12:before {
+    height: 100px; } }
+
+@media (min-width: 33.75em) {
+  .features-second__block-title {
+    padding-left: 180px; } }
+
+@media (min-width: 600px) {
+  .features-second__step--10:before {
+    height: 150px; }
+  .features-second__step--11:before {
     height: 150px; } }
+
+@media (min-width: 441px) and (max-width: 600px) {
+  .features-second__step--11:before {
+    height: 200px; } }
+
+@media (min-width: 1279px) and (max-width: 1281px) {
+  .features-second:before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/line_horizont.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 384px;
+    left: 218px;
+    top: 33.5%; }
+  .features-second__stripe5:before {
+    position: absolute;
+    content: '';
+    background-color: #000;
+    width: 1px;
+    height: 130px;
+    left: 109px;
+    top: -5px; }
+  .features-second__wrapper {
+    max-width: 55%;
+    margin-left: 36%; }
+  .features-first__step:before {
+    height: 120px; }
+  .features-second__block-title {
+    padding-left: 10px; } }
+
+@media (min-width: 64em) {
+  .features-second__step--12:before {
+    height: 75px; } }
