@@ -1,13 +1,8 @@
 .header{
-  height: 100vh;
-  background-image: url(../img/Promo-block-index.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  color: $white;
-  @include mq($from:xs, $until:sm){
-    background-image: url(../img/Promo-block-index-320.jpg);
-  }
+  // height: 100vh;
+  color: #fff;
+  position: relative;
+
 
   .row {
     justify-content: space-between;
@@ -19,8 +14,7 @@
     display: flex;
     padding-top: 50px;
     @include mq($from:xs, $until:xl){
-      flex-direction: row;
-      padding-top: 25px;
+      display: block;
     }
   }
 
@@ -68,6 +62,8 @@
       font-size: 0;
       height: 20px;
       width: 20px;
+      position: absolute;
+      right: 7%;
       background-image: url(../img/phone.svg);
       transform: rotate(270deg);
     }
@@ -91,8 +87,8 @@
   max-width: 50%;
   align-items: center;
   @include mq($from:xs, $until:xl){
-    width: 100%;
-    position: relative;
+     width: 100%;
+    // position: relative;
     z-index: 100;
   }
   &__hamburger{
@@ -103,6 +99,10 @@
       width: 10%;
       z-index: 1000;
       position: absolute;
+      left: 3%;
+    }
+      @include mq($from:sm, $until:md){
+      left: 7%;
     }
   }
 
@@ -121,15 +121,20 @@
       text-align: center;
       margin-top: 0;
       flex-direction: column;
-      // max-width: 100%;
       position: absolute;
       background-color: #1c202c;
       top: 0;
+      left: 0;
       z-index: 10;
       padding-top: 40px;
       text-align: left;
       padding-bottom: 30px;
-      width: 285px;
+      width: 94vw;
+      padding-left: 12%;
+      padding-top: 80px;
+       @include mq($from:sm, $until:xl) {
+         width: 96vw;
+       }
         .nav__item {
           padding-top: 12px;
         }
@@ -236,7 +241,7 @@
     letter-spacing: 0;
     font-family: $bold;
     @include mq($from:xs, $until:sm){
-      margin-top: 65px;
+      margin-top: 95px;
       font-size: 26px;
     }
   }
@@ -262,9 +267,32 @@
   }
 }
 
+.header--index {
+  .header__bgr {
+   background-color: #1e2432;
+  @include mq($from:xs, $until:sm){
+    background-color: #1c202c;
+  }
+  }
+  .promo {
+    height: 100vh;
+    background-image: url(../img/Promo-block-index.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: $white;
+  @include mq($from:xs, $until:sm){
+    background-image: url(../img/Promo-block-index-320.jpg);
+  }
+}
+}
+
 .header--rent {
+  height: 100vh;
+    background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   background-image: url(../img/Promo-block-arenda.jpg);
-  min-height: 650px;
   @include mq($from:xs, $until:sm){
     background-image: url(../img/Promo-block-arenda.jpg);
   }
@@ -282,8 +310,11 @@
 }
 
 .header--resellers {
+  height: 100vh;
+    background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   background-image: url(../img/Promo-block-twohands.jpg);
-  min-height: 650px;
   @include mq($from:xs, $until:sm){
     background-image: url(../img/Promo-block-twohands.jpg);
   }
@@ -291,7 +322,10 @@
 
 .header--commerce {
   background-image: url(../img/Promo-block-commerce.jpg);
-  min-height: 650px;
+  height: 100vh;
+    background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   @include mq($from:xs, $until:sm){
     background-image: url(../img/Promo-block-commerce.jpg);
   }
@@ -310,7 +344,10 @@
 
 .header--support {
   background-image: url(../img/Promo-block-support.jpg);
-  min-height: 650px;
+  height: 100vh;
+    background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   @include mq($from:xs, $until:sm){
     background-image: url(../img/Promo-block-support.jpg);
   }

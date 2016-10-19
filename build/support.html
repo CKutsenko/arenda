@@ -44,13 +44,13 @@
   <body>
     <header>
       <!--Header-->
-      <header class="header header--support">
+      <div class="header header--support">
         <div class="container">
           <div class="row">
             <!--Logo-->
-            <div class="header__logo">
-              <img src="img/logo_agency.png">
-            </div>
+            <a class="header__logo" href="index.html">
+              <img src="img/logo_agency.png" alt="logo">
+            </a>
             <nav class="nav">
               <div class="nav__hamburger">
                 <a class="hamburger" href="#"></a>
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </header>
     <main>
       <!--Support-->
@@ -105,35 +105,85 @@
           <div class="support__wrapper">
             <h2 class="support__title">На службе заботы о Вас</h2>
             <div class="support__cite-wrapper">
-              <p class="support__quote">Я создал экспертное агентство удобным для людей</br>с разными потребностями и задачами,</br>понимаю и несу ответственность за каждую семью,</br>которая покупает квартиру</p>
+              <p class="support__quote">Я создал экспертное агентство удобным для людей
+                <br>с разными потребностями и задачами,
+                <br>понимаю и несу ответственность за каждую семью,
+                <br>которая покупает квартиру</p>
               <p class="support__cite">— Денис Леушин, основатель экспертного агентства</p>
             </div>
             <h3 class="support__subtitle">Оцените преимущества работы с нами:</h3>
-            <h4 class="support__features">Решение вопросов у застройщика</h4>
-            <p class="support__features-text">Больше не придется разбираться во всем в одиночку,</br>мы контролируем весь процесс покупки квартиры</p>
-            <h4 class="support__features">Ежемесячное информирование о ходе строительства</h4>
-            <h4 class="support__features">Подбор паркинга/кладовой перед сдачей дома</h4>
-            <h4 class="support__features">Ускорение получения ключей</h4>
-            <h4 class="support__features">Осмотр квартиры с опытным строителем</h4>
-            <h4 class="support__features">Помощь в сборе документов на регистрацию собственности</h4>
-            <h4 class="support__features">Помощь в получении налогового вычета (до 650 000 &#8381;)</h4>
-            <h4 class="support__features">Юридическая поддержка клиентов</h4>
-            <h4 class="support__features">Выгодные цены на отделку от наших партнеров*</h4>
-            <h4 class="support__features">Выгодные цены на стройматериалы*</h4>
-            <h4 class="support__features">Продажа/сдача в аренду квартиры</h4>
+            <ul class="support__list">
+              <li class="support__item active">
+                <h4 class="support__features">Решение вопросов у застройщика</h4>
+                <p class="support__features-text">Больше не придется разбираться во всем в одиночку,
+                  <br>мы контролируем весь процесс покупки квартиры</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Ежемесячное информирование о ходе строительства</h4>
+                <p class="support__features-text">Мы каждый месяц высылаем вам отчёт по строительству вашей квартиры.
+                  <br>Вы наглядно сможете следить за всеми этапами строительства.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Подбор паркинга/кладовой перед сдачей дома</h4>
+                <p class="support__features-text">Покупка дополнительных площадей в Вашем жилом комплексе. Мы поможем
+                  <br>вам купить кладовую или паркинг без головной боли и на выгодных условиях.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Ускорение получения ключей</h4>
+                <p class="support__features-text">С нами вы сможете получить включи одни из первых и заехать в
+                  <br>вашу новую квартиру как можно скорее.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Осмотр квартиры с опытным строителем</h4>
+                <p class="support__features-text">Мы всегда с Вами в самый важный момент - момент приемки квартиры.
+                  <br>Опытный строитель выявит все недочеты, для того, чтобы вам не
+                  <br>пришлось исправлять ошибки застройщика самостоятельно.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Помощь в сборе документов на регистрацию собственности</h4>
+                <p class="support__features-text">Курируя вашу сделку, мы поможем собрать вам все документы необходимые
+                  <br>для регистрации собственности, потому что мы знаем как сделать
+                  <br>это максимально быстро. Кстати, консультация для Вас бесплатная.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Помощь в получении налогового вычета (до 650 000 &#8381;)</h4>
+                <p class="support__features-text">Мы знаем как сэкономить ваши деньги и поможем вам получить
+                  <br>налоговый вычет со стоимости квартиры, а так же с переплаченных процентов.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Юридическая поддержка клиентов</h4>
+                <p class="support__features-text">Наша команда юристов поможет решить вам любой юридический вопрос,
+                  <br>будь то переоформление собственности на квартиру или продажа квартиры
+                  <br>до передачи ключей, и помните, мы всегда на вашей стороне!</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Выгодные цены на отделку от наших партнеров*</h4>
+                <p class="support__features-text">Сети наших партнёров предоставляют хорошие скидки для наших клиентов
+                  <br>в магазинах, которые помогут сделать ремонт в вашей будущей квартире.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Выгодные цены на стройматериалы*</h4>
+                <p class="support__features-text">Мы предоставляем скидки для Вас в строительных магазинах,
+                  <br>что существенно поможет сэкономить вам ваши деньги.</p>
+              </li>
+              <li class="support__item">
+                <h4 class="support__features">Продажа/сдача в аренду квартиры</h4>
+                <p class="support__features-text">Если вы хотите продать купленную через нас квартиру или сдать
+                  <br>её в аренду, то мы поможем вам сделать это максимально быстро и выгодно.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <!-- Footer-->
     <footer class="footer">
-      <div class="footer__contacts-block">
+      <div class="footer__contacts-block" id="form">
         <div class="container">
           <div class="contacts">
             <h2 class="contacts__title">Ответим на любые вопросы
-              <p>Звоните 8 (812) 939-31-98</p>
-            </h2>
-            <form class="contacts__form" id="form">
+              <br> Звоните 8 (812) 939-31-98</h2>
+            <form class="contacts__form">
               <label class="contacts__label">
                 <input class="contacts__input" type="tel" name="phone" placeholder="Ваш номер телефона" />
               </label>
@@ -148,9 +198,10 @@
         <div class="container">
           <h2 class="contact-send__thanks">Спасибо!</h2>
           <div class="contact-send__img">
-            <img src="img/success.svg">
+            <img src="img/success.svg" alt="success">
           </div>
-          <p class="contact-send__text">Мы получили вашу заявку и</br>перезвоним вам очень быстро!</p>
+          <p class="contact-send__text">Мы получили вашу заявку и
+            <br>перезвоним вам очень быстро!</p>
         </div>
       </div>
       <div class="nav-footer">
@@ -178,7 +229,8 @@
                 </li>
               </ul>
               <p class="navigation-footer__copyright">© 2010—2016 «Экспертное агентство Дениса Леушина»</p>
-              <p class="navigation-footer__copyright-second">© 2010—2016</br>«Экспертное агентство Дениса Леушина»</p>
+              <p class="navigation-footer__copyright-second">© 2010—2016
+                <br>«Экспертное агентство Дениса Леушина»</p>
             </nav>
             <div class="nav-footer__phone-inner">
               <a class="nav-footer__phone" href="tel:88129393198">8 (812) 939-31-98</a>

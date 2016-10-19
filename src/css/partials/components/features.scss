@@ -38,7 +38,7 @@
       height: 20px;
       border-radius: 50%;
       left: 100px;
-      @include mq($from:xs, $until:md) {
+      @include mq($from:xs, $until:lg) {
         left: 60px;
       }
     }
@@ -48,15 +48,14 @@
       content: '';
       background-color: #000;
       width: 1px;
-      height: 100px;
+      height: 500px;
       left: 109px;
       @include mq($from:xs, $until:sm) {
         left: 70px;
-        height: 172px;
+
       }
-      @include mq($from:sm, $until:md) {
+      @include mq($from:sm, $until:lg) {
         left: 70px;
-        height: 118px;
       }
     }
   }
@@ -89,20 +88,6 @@
   background-color: #99c7ff;
   padding: 20px 0 60px;
 
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   background-image: url(../img/line_horizont.png);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   height: 250px;
-  //   width: 650px;
-  //   // left: 209px;
-  //   // width: 20%;
-  //   // height: 20%;
-  //   left: 15.5%;
-  //   top: 32%;
-  // }
 
   &__block-title {
     font-size: 46px;
@@ -121,8 +106,7 @@
 
   &__wrapper {
     position: relative;
-    max-width: 55%;
-    margin-left: 36%;
+
     @include mq($from:xs, $until:lg) {
       margin-left: 0;
       max-width: 100%;
@@ -151,15 +135,16 @@
       content: '';
       background-color: #000;
       width: 1px;
-      height: 130px;
+      height: 170px;
       left: 109px;
+      z-index: 1;
       @include mq($from:xs, $until:sm) {
         left: 70px;
-        height: 172px;
+
       }
       @include mq($from:sm, $until:lg) {
         left: 70px;
-        height: 150px;
+
       }
     }
   }
@@ -188,17 +173,85 @@
   }
 }
 
-.features-second__step--last:before,
-.features-first__step--last:before {
-  display: none;
+.features-second__block-title {
+  padding-left: 100px;
+    @include mq($from:sm) {
+      padding-left: 180px;
+    }
 }
 
-.features-second__step--prelast:before {
-  height: 100px;
-    @include mq($from:xs, $until:sm) {
-      height: 100px;
+
+.features-second__step--9:before {
+  height: 300px;
+}
+.features-second__step--7:before {
+  height: 290px;
+}
+
+.features-second__step--10:before {
+  height: 290px;
+  @media (min-width: 600px) {
+  height: 150px;
+}
+}
+
+.features-second__step--11:before {
+  height: 290px;
+
+@media (min-width: 441px) and (max-width:600px){
+  height: 200px;
+}
+@media (min-width: 600px) {
+  height: 150px;
+}
+}
+
+@media (min-width: 1279px) and (max-width:1281px) {
+  .features-second:before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/line_horizont.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 384px;
+    left: 218px;
+    top: 33.5%;
   }
+
+  .features-second__stripe5:before {
+    position: absolute;
+      content: '';
+      background-color: #000;
+      width: 1px;
+      height: 130px;
+      left: 109px;
+      top: -5px;
+  }
+
+  .features-second__wrapper {
+    max-width: 55%;
+    margin-left: 36%;
+  }
+
+  .features-first__step:before {
+    height: 120px;
+  }
+
+  .features-second__block-title {
+    padding-left: 10px;
+   }
 }
 
-
-
+.features-second__step--12:before {
+  background-color: #99c7ff;
+  z-index: 100;
+  height: 130px;
+  top: 20px;
+    @include mq($from:sm, $until:lg) {
+      height: 100px;
+    }
+    @include mq($from:lg) {
+      height: 75px;
+    }
+}

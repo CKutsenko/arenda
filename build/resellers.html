@@ -44,13 +44,13 @@
   <body>
     <header>
       <!-- Header-->
-      <header class="header header--resellers">
+      <div class="header header--resellers">
         <div class="container">
           <div class="row">
             <!--Logo-->
-            <div class="header__logo">
-              <img src="img/logo_agency.png">
-            </div>
+            <a class="header__logo" href="index.html">
+              <img src="img/logo_agency.png" alt="logo">
+            </a>
             <nav class="nav">
               <div class="nav__hamburger">
                 <a class="hamburger" href="#"></a>
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </header>
     <main>
       <!--Resale-->
@@ -112,7 +112,7 @@
             <p class="resale__text">— Понимает потребности и желания</p>
           </div>
           <div class="resale__wrapper resale__wrapper--second">
-            <h2 class="resale__title">Поможет продать вашу квартиру</h2>
+            <h2 class="resale__title">Поможем продать вашу квартиру</h2>
             <h3 class="resale__subtitle"> Это значит, что:</h3>
             <p class="resale__text">— Оценим стоимость вашей квартиры/другой недвижимости</p>
             <p class="resale__text">— Правильно преподнесем ваш объект рынку</p>
@@ -125,13 +125,12 @@
     </main>
     <!-- Footer-->
     <footer class="footer">
-      <div class="footer__contacts-block">
+      <div class="footer__contacts-block" id="form">
         <div class="container">
           <div class="contacts">
             <h2 class="contacts__title">Ответим на любые вопросы
-              <p>Звоните 8 (812) 939-31-98</p>
-            </h2>
-            <form class="contacts__form" id="form">
+              <br> Звоните 8 (812) 939-31-98</h2>
+            <form class="contacts__form">
               <label class="contacts__label">
                 <input class="contacts__input" type="tel" name="phone" placeholder="Ваш номер телефона" />
               </label>
@@ -146,9 +145,10 @@
         <div class="container">
           <h2 class="contact-send__thanks">Спасибо!</h2>
           <div class="contact-send__img">
-            <img src="img/success.svg">
+            <img src="img/success.svg" alt="success">
           </div>
-          <p class="contact-send__text">Мы получили вашу заявку и</br>перезвоним вам очень быстро!</p>
+          <p class="contact-send__text">Мы получили вашу заявку и
+            <br>перезвоним вам очень быстро!</p>
         </div>
       </div>
       <div class="nav-footer">
@@ -176,7 +176,8 @@
                 </li>
               </ul>
               <p class="navigation-footer__copyright">© 2010—2016 «Экспертное агентство Дениса Леушина»</p>
-              <p class="navigation-footer__copyright-second">© 2010—2016</br>«Экспертное агентство Дениса Леушина»</p>
+              <p class="navigation-footer__copyright-second">© 2010—2016
+                <br>«Экспертное агентство Дениса Леушина»</p>
             </nav>
             <div class="nav-footer__phone-inner">
               <a class="nav-footer__phone" href="tel:88129393198">8 (812) 939-31-98</a>
