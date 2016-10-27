@@ -19,11 +19,11 @@
   }
 
   &__logo{
-    max-width: 198px;
+    max-width: 170px;
     max-height: 68px;
-    min-width: 150px;
+    min-width: 120px;
     min-height: 50px;
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     @include mq($from:xs, $until:xl){
       order: 2;
       max-width: 55%;
@@ -231,8 +231,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    flex: 0 0 55%;
-    max-width: 55%;
+
     @include mq($from:xs, $until:xl){
       max-width: 100%;
       flex: 0 0 100%;
@@ -279,11 +278,12 @@
   }
   }
   .promo {
-    height: 100vh;
+    height: calc(100vh - 100px);
     background-image: url(../img/Promo-block-index.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
+   background-color: #1e2432;
   color: $white;
   @include mq($from:xs, $until:sm){
     background-image: url(../img/Promo-block-index-320.jpg);
@@ -382,8 +382,8 @@
   }
 
   &__logo{
-    max-width: 25%;
-    flex: 0 0 25%;
+    max-width: 20%;
+    flex: 0 0 20%;
     @include mq($from:xs, $until:xl){
       order: 1;
       align-items: center;
