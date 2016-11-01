@@ -11,21 +11,22 @@ include ../abstracts/bemto/bemto.pug
       +b.NAV.nav
         +e.hamburger
           +b.A.hamburger(href="#")
-        +e.UL.list
-          +e.LI.item
-            a(href="index.html") Новостройки
-          +e.LI.item
-            a(href="rent.html") Аренда
-          +e.LI.item
-            a(href="resellers.html") Вторичная
-          +e.LI.item
-            a(href="commerce.html") Коммерция
-          +e.LI.item
-            a(href="support.html") Служба заботы
-          +e.LI.min-call
-            a(href="tel:88129393198") 8 (812) 939-31-98
-          +e.LI.min-order
-            +e.A.ord.go_to(href="#form") Обратный звонок
+        +e.wrapper
+          +e.UL.list
+            +e.LI.item
+              a(href="index.html") Новостройки
+            +e.LI.item
+              a(href="rent.html") Аренда
+            +e.LI.item
+              a(href="resellers.html") Вторичная
+            +e.LI.item
+              a(href="commerce.html") Коммерция
+            +e.LI.item
+              a(href="support.html") Служба заботы
+            +e.LI.min-call
+              a(href="tel:88129393198") 8 (812) 939-31-98
+            +e.LI.min-order
+              +e.A.ord.go_to(href="#form") Обратный звонок
       +e.phone-inner
         +e.A.phone(href="tel:88129393198") 8 (812) 939-31-98
         +e.A.order.go_to(href="#form") Обратный звонок
@@ -38,4 +39,6 @@ include ../abstracts/bemto/bemto.pug
           </br>и понятной
         +e.btn-wrapper
           +e.A.btn.go_to(href="#form") Получить бесплатную консультацию
-
+        +e.arrow-inner
+          +e.arrow.arrow-1
+          +e.arrow.arrow-2

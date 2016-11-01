@@ -1,8 +1,8 @@
 .support {
-  background-image: url(../img/Denis_L.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding: 60px 0 130px;
+  // background-image: url(../img/Denis_L.jpg);
+  // background-repeat: no-repeat;
+  // background-position: right center;
+  padding-top: 60px;
   background-size: contain;
   @include mq($from:xs, $until:md){
     padding: 30px 0;
@@ -18,6 +18,29 @@
       font-size: 26px;
       font-family: $bold;
     }
+  }
+
+  &__wrapper {
+    max-width: 50%;
+  }
+
+  &__inner {
+    max-width: 50%;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
   }
 
   &__quote {
@@ -52,6 +75,9 @@
 
   &__item {
     list-style-type: none;
+    &--last {
+      padding-bottom: 80px;
+    }
   }
 
   &__features {
