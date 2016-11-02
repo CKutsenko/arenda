@@ -487,9 +487,6 @@ html {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
 
-h4 {
-  font-weight: normal !important; }
-
 body {
   margin: 0;
   background-color: #ffffff;
@@ -1325,7 +1322,11 @@ img {
 
 .support {
   padding-top: 60px;
-  background-size: contain; }
+  background-size: contain;
+  background-image: url(../img/Denis_L.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 180px;
+  background-size: 550px 1100px; }
   .support__title {
     font-size: 46px;
     letter-spacing: 0;
@@ -1335,10 +1336,10 @@ img {
     max-width: 50%; }
   .support__inner {
     max-width: 50%; }
-  .support__img {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
+  .support__item {
+    list-style-type: none; }
+    .support__item--last {
+      padding-bottom: 80px; }
   .support .container {
     display: -moz-flex;
     display: -ms-flex;
@@ -1361,15 +1362,12 @@ img {
   .support__list {
     padding: 0;
     position: relative; }
-  .support__item {
-    list-style-type: none; }
-    .support__item--last {
-      padding-bottom: 80px; }
   .support__features {
     color: #3b42b0;
     font-size: 20px;
-    font-family: "PTSansBold", sans-serif;
-    cursor: pointer; }
+    cursor: pointer;
+    letter-spacing: 0;
+    font-weight: 600; }
   .support__features-text {
     font-size: 16px; }
 
@@ -1525,6 +1523,9 @@ img {
     padding: 0;
     margin: 0;
     line-height: 2; }
+  .support {
+    padding: 30px 0;
+    background: none; }
   .support__wrapper {
     max-width: 100%; }
   .support__inner {
@@ -1653,9 +1654,6 @@ img {
     padding-top: 20px; }
   .business p {
     font-size: 14px; }
-  .support {
-    padding: 30px 0;
-    background: none; }
   .support__title {
     font-size: 26px;
     font-family: "PTSansBold", sans-serif; }
