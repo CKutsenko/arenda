@@ -10234,7 +10234,7 @@ jQuery(document).ready(function($){
 
     $(window).resize(function() {
                 if ($(window).width() <= '1050'){
-           $('.nav__wrapper').addClass('dn')
+           $('.nav__wrapper').css('display','none')
             return this;}
          else   {
               $('.nav__wrapper').css('display','block')
