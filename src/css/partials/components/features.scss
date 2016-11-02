@@ -206,42 +206,42 @@
 }
 }
 
-@media (min-width: 1279px) and (max-width:1281px) {
-  .features-second:before{
-    content: '';
-    position: absolute;
-    background-image: url(../img/line_horizont.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 384px;
-    left: 218px;
-    top: 33.5%;
-  }
+// @media (min-width: 1279px) and (max-width:1281px) {
+//   .features-second:before{
+//     content: '';
+//     position: absolute;
+//     background-image: url(../img/line_horizont.png);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     height: 250px;
+//     width: 384px;
+//     left: 218px;
+//     top: 33.5%;
+//   }
 
-  .features-second__stripe5:before {
-    position: absolute;
-      content: '';
-      background-color: #000;
-      width: 1px;
-      height: 130px;
-      left: 109px;
-      top: -5px;
-  }
+//   .features-second__stripe5:before {
+//     position: absolute;
+//       content: '';
+//       background-color: #000;
+//       width: 1px;
+//       height: 130px;
+//       left: 109px;
+//       top: -5px;
+//   }
 
-  .features-second__wrapper {
-    max-width: 55%;
-    margin-left: 36%;
-  }
+//   .features-second__wrapper {
+//     max-width: 55%;
+//     margin-left: 36%;
+//   }
 
-  .features-first__step:before {
-    height: 120px;
-  }
+//   .features-first__step:before {
+//     height: 120px;
+//   }
 
-  .features-second__block-title {
-    padding-left: 10px;
-   }
-}
+//   .features-second__block-title {
+//     padding-left: 10px;
+//    }
+// }
 
 .features-second__step--12:before {
   background-color: #99c7ff;

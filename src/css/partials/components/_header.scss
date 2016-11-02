@@ -472,8 +472,10 @@
 
   &__phone {
     font-size: 16px;
-    @include mq($from:xs, $until:xl){
-      margin-bottom: 25px;
+    @include mq($from:xs, $until:xl) {
+      padding: 0;
+      margin: 0;
+      line-height: 6;
     }
   }
 
@@ -483,9 +485,9 @@
     border-bottom: 1px solid transparent;
     margin-top: 25px;
     @include mq($from:xs, $until:xl){
+      padding: 0;
+      margin-bottom: 15px;
       margin-top: 0;
-      margin-bottom: 25px;
-      border-bottom: 1px solid $white;
     }
 
     &:hover {

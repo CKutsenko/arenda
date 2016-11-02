@@ -8,7 +8,15 @@
     background-color: #1e2432;
   }
 
-  &__nav {
+  &__nav-footer {
+        &__phone {
+      font-size: 16px;
+    @include mq($from:xs, $until:xl) {
+      padding: 0;
+      margin: 0;
+      line-height: 2;
+    }
+  }
     .row {
       justify-content: space-between;
       flex-wrap: nowrap;
@@ -19,7 +27,7 @@
       display: flex;
       padding-top: 50px;
     }
-  }
+
     &__logo{
       max-width: 25%;
       flex: 0 0 25%;
@@ -43,9 +51,7 @@
       }
     }
 
-    &__phone {
-      font-size: 16px;
-    }
+
 
     &__order {
       font-size: 14px;
@@ -55,7 +61,7 @@
       }
     }
 }
-
+}
 .contact-send {
   text-align: center;
   min-height: 430px;
