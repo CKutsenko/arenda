@@ -1,10 +1,12 @@
 .support {
-  // background-image: url(../img/Denis_L.jpg);
-  // background-repeat: no-repeat;
-  // background-position: right center;
   padding-top: 60px;
   background-size: contain;
-  @include mq($from:xs, $until:md){
+  background-image: url(../img/Denis_L.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 180px;
+  background-size: 550px 1100px;
+
+  @include mq($from:xs, $until:xl){
     padding: 30px 0;
     background: none;
   }
@@ -34,10 +36,21 @@
     }
   }
 
-  &__img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  // &__img {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   height: 1030px;
+  //   img {
+  //     height: 100%;
+  //   }
+  // }
+
+  &__item {
+    list-style-type: none;
+    &--last {
+      padding-bottom: 80px;
+    }
   }
 
   .container {
@@ -74,23 +87,18 @@
       font-family: $bold;
     }
   }
+
   &__list {
     padding: 0;
     position: relative;
   }
 
-  &__item {
-    list-style-type: none;
-    &--last {
-      padding-bottom: 80px;
-    }
-  }
-
   &__features {
     color: #3b42b0;
     font-size: 20px;
-    font-family: $bold;
     cursor: pointer;
+    letter-spacing: 0;
+    font-weight: 600;
   }
 
   &__features-text {

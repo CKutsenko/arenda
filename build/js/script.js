@@ -10233,7 +10233,7 @@ jQuery(document).ready(function($){
   });
 
     $(window).resize(function() {
-                if ($(window).width() <= '1050'){
+                if ($(window).width() <= '1120'){
            $('.nav__wrapper').css('display','none')
             return this;}
          else   {
