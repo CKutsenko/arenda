@@ -645,7 +645,7 @@ img {
   position: absolute;
   display: inline-block;
   width: 80px;
-  height: 580px;
+  height: 380px;
   left: 0;
   right: 0;
   margin: 0 auto; }
@@ -661,7 +661,7 @@ img {
   top: 90%;
   transition: .6s ease-out; }
   .promo__arrow:hover {
-    top: 93%; }
+    top: 95%; }
   .promo__arrow:after, .promo__arrow:before {
     background: #fff;
     content: '';
